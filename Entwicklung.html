@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entwicklung von VR/AR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .timeline {
+            list-style-type: none;
+            position: relative;
+        }
+        .timeline:before {
+            content: '';
+            background: #d4d9df;
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            width: 4px;
+            height: 100%;
+            z-index: 400;
+        }
+        .timeline-item {
+            padding: 20px 0;
+            position: relative;
+        }
+        .timeline-item:before {
+            content: '';
+            background: white;
+            border: 3px solid #22c0e8;
+            display: inline-block;
+            position: absolute;
+            border-radius: 50%;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            z-index: 400;
+        }
+        .timeline-item-content {
+            padding: 20px;
+            background: white;
+            position: relative;
+            border-radius: 6px;
+            width: 45%;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        .timeline-item-content.left {
+            left: 0;
+        }
+        .timeline-item-content.right {
+            left: 55%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Entwicklung von VR/AR</h1>
+    </header>
+    <div class="container">
+        <ul class="timeline">
+            <li class="timeline-item">
+                <div class="timeline-item-content left">
+                    <h2>1968</h2>
+                    <p>Ivan Sutherland und Bob Sproull entwickeln das erste VR/AR Headset, genannt "The Sword of Damocles".</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-item-content right">
+                    <h2>1987</h2>
+                    <p>Der Begriff "Virtual Reality" wird von Jaron Lanier geprägt, der auch die ersten kommerziellen VR-Produkte entwickelt.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-item-content left">
+                    <h2>1992</h2>
+                    <p>Das erste AR-System, genannt "Virtual Fixtures", wird von Louis Rosenberg bei der US Air Force entwickelt.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-item-content right">
+                    <h2>2012</h2>
+                    <p>Oculus VR wird gegründet und startet eine Kickstarter-Kampagne für das Oculus Rift Headset, was die moderne VR-Ära einleitet.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-item-content left">
+                    <h2>2016</h2>
+                    <p>Die ersten Consumer-Grade VR-Headsets wie HTC Vive und PlayStation VR werden veröffentlicht.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-item-content right">
+                    <h2>2019</h2>
+                    <p>Oculus Quest wird veröffentlicht, ein eigenständiges VR-Headset ohne externe Sensoren.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
