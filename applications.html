@@ -1,96 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VR und AR Anwendungen</title>
+    <title>Einsatzmöglichkeiten von VR/AR</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
         }
         header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
+            background-color: #18ca9a;
+            color: white;
             text-align: center;
+            padding: 20px 0;
         }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
+        main {
             padding: 20px;
-            background: #fff;
+        }
+        section {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
-            color: #444;
+        h2 {
+            color: #333;
         }
-        .section {
-            margin-bottom: 20px;
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
-        .section h2 {
-            margin-top: 0;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        ul li {
-            margin-bottom: 10px;
+        a {
+            color: #4CAF50;
         }
     </style>
 </head>
 <body>
+    <nav style="background-color: #444; padding: 1em;">
+        <ul style="list-style: none; padding: 0; display: flex; justify-content: center;">
+            <li style="margin: 0 1em;"><a href="index.html" style="color: #fff; text-decoration: none;">Startseite</a></li>
+            <li style="margin: 0 1em;"><a href="definition.html" style="color: #fff; text-decoration: none;">Definition</a></li>
+            <li style="margin: 0 1em;"><a href="vorteile Nachteile.html" style="color: #fff; text-decoration: none;">Vorteile/Nachteile</a></li>
+            <li style="margin: 0 1em;"><a href="applications.html" style="color: #fff; text-decoration: none;">Anwendungen</a></li>
+            <li style="margin: 0 1em;"><a href="Entwicklung.html" style="color: #fff; text-decoration: none;">Entwicklung</a></li>
+            <li style="margin: 0 1em;"><a href="Perspektive.html" style="color: #fff; text-decoration: none;">Perspektive</a></li>
+            <li style="margin: 0 1em;"><a href="tracking.html" style="color: #fff; text-decoration: none;">Trackingtechnologien</a></li>
+            <li style="margin: 0 1em;"><a href="Software.html" style="color: #fff; text-decoration: none;">Software</a></li>
+            <li style="margin: 0 1em;"><a href="Herausforderungen.html" style="color: #fff; text-decoration: none;">Herausforderungen</a></li>
+            <li style="margin: 0 1em;"><a href="Faktoren.html" style="color: #fff; text-decoration: none;">Beeinflussende Faktoren</a></li>
+        </ul>
+    </nav>
     <header>
-        <h1>VR und AR Anwendungen</h1>
+        <h1>Einsatzmöglichkeiten von VR/AR</h1>
     </header>
-    <div class="container">
-        <div class="section" id="bildung-training">
+    <main>
+        <section>
+            <h2>Medizin</h2>
+            <p>In der Medizin bietet VR und AR zahlreiche Möglichkeiten. Ärzte können virtuelle Operationstrainings absolvieren, ohne ein Risiko für echte Patienten einzugehen. Darüber hinaus wird VR erfolgreich zur Behandlung von Phobien eingesetzt, da Patienten in einer kontrollierten virtuellen Umgebung mit ihren Ängsten konfrontiert werden können. Besonders in der minimalinvasiven Chirurgie unterstützt AR die Ärzte, indem es ihnen zusätzliche Informationen in Echtzeit liefert.</p>
+        </section>
+        <section>
             <h2>Bildung und Training</h2>
-            <ul>
-                <li><strong>VR:</strong> Realitätsnahe Simulationen für Schulungen, z. B. in der Medizin (chirurgische Eingriffe), Luftfahrt (Pilotentraining) oder Gefahrensituationen (Brandschutzübungen).</li>
-                <li><strong>AR:</strong> Erweiterte Lernumgebungen, bei denen digitale Inhalte wie 3D-Modelle in den Unterricht integriert werden, z. B. anatomische Modelle in der Medizin oder interaktive Chemieexperimente.</li>
-            </ul>
-        </div>
-        <div class="section" id="unterhaltung-gaming">
-            <h2>Unterhaltung und Gaming</h2>
-            <ul>
-                <li><strong>VR:</strong> Immersive Videospiele, virtuelle Kinos und Freizeitparks, die vollständig in virtuelle Welten eintauchen lassen.</li>
-                <li><strong>AR:</strong> Mobile Spiele wie Pokémon GO oder interaktive AR-Elemente in TV-Shows und Livestreams.</li>
-            </ul>
-        </div>
-        <div class="section" id="architektur-immobilien">
-            <h2>Architektur und Immobilien</h2>
-            <ul>
-                <li><strong>VR:</strong> Virtuelle Rundgänge durch Gebäude vor ihrer Fertigstellung.</li>
-                <li><strong>AR:</strong> Überlagerung von Bauplänen oder Designelementen in die reale Umgebung, um zukünftige Bauprojekte zu visualisieren.</li>
-            </ul>
-        </div>
-        <div class="section" id="handel-ecommerce">
-            <h2>Handel und E-Commerce</h2>
-            <ul>
-                <li><strong>VR:</strong> Virtuelle Einkaufserlebnisse in 3D-Shops.</li>
-                <li><strong>AR:</strong> Virtuelles Anprobieren von Kleidung, Brillen oder Möbelstücken durch Smartphone-Apps.</li>
-            </ul>
-        </div>
-        <div class="section" id="tourismus-kultur">
-            <h2>Tourismus und Kultur</h2>
-            <ul>
-                <li><strong>VR:</strong> Virtuelle Besuche von Sehenswürdigkeiten, Museen oder historischen Stätten.</li>
-                <li><strong>AR:</strong> Führungen mit AR-Inhalten, z. B. historische Informationen oder Rekonstruktionen vor Ort.</li>
-            </ul>
-        </div>
-        <div class="section" id="soziale-interaktion">
-            <h2>Soziale Interaktion</h2>
-            <ul>
-                <li><strong>VR:</strong> Virtuelle Konferenzen, Events und Plattformen für soziale Interaktionen, z. B. in Metaverse-ähnlichen Umgebungen.</li>
-                <li><strong>AR:</strong> Integration von AR-Filtern in sozialen Medien (z. B. Snapchat oder Instagram).</li>
-            </ul>
-        </div>
-    </div>
+            <p>VR-Simulatoren werden zunehmend für Schulungen in anspruchsvollen Berufen wie Piloten, Schiffs- und Zugführern verwendet. Ebenso wird VR genutzt, um Personal in komplexen technischen Anlagen wie Kraftwerken oder Flugzeugen zu schulen. Auch Museen und Science Center setzen VR und AR ein, um Besuchern Wissen interaktiv und immersiv zu vermitteln.</p>
+        </section>
+        <section>
+            <h2>Architektur und Bauplanung</h2>
+            <p>In der Architektur und Bauplanung ermöglicht AR die Visualisierung von geplanten Gebäuden oder städtebaulichen Veränderungen direkt vor Ort. Dadurch können Bürger an großen Bauvorhaben besser beteiligt werden, da sie eine klare Vorstellung von den geplanten Veränderungen erhalten.</p>
+        </section>
+        <section>
+            <h2>Unterhaltung und Spiele</h2>
+            <p>VR und AR haben die Spieleindustrie revolutioniert. VR-Simulationen bieten Spielern immersive Erlebnisse in virtuellen Welten, sei es bei Adventure-Games oder virtuellen Stadtrundgängen. AR-Spiele wie Pokémon Go haben durch mobile Plattformen wie ARKit und ARCore eine enorme Popularität erlangt.</p>
+        </section>
+        <section>
+            <h2>Industrie und Wartung</h2>
+            <p>In der Industrie wird AR häufig zur Fernwartung eingesetzt. Nutzer erhalten visuelle Anleitungen, die sie durch Wartungs- und Reparaturprozesse führen. Außerdem findet AR Anwendung in der Fertigungsplanung und im Produktionsprozess, beispielsweise bei der Deutschen Bahn, um Arbeitsabläufe effizienter zu gestalten.</p>
+        </section>
+        <section>
+            <h2>Marketing und Präsentation</h2>
+            <p>Im Marketing wird VR häufig als Blickfang auf Messen eingesetzt, um Produkte und Dienstleistungen eindrucksvoll zu präsentieren. AR wird genutzt, um historische Bauwerke in Touristenattraktionen zu visualisieren und Besuchern so einen Mehrwert zu bieten.</p>
+        </section>
+        <section>
+            <h2>Tourismus und Navigation</h2>
+            <p>AR-basierte Navigation wird zunehmend in Smartphones integriert. Diese Technologie ermöglicht es Nutzern, sich effizienter in unbekannten Gebieten zurechtzufinden. Zudem werden virtuelle Stadtführungen und Besichtigungen historischer Orte durch AR-Erweiterungen bereichert.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Quelle: Dörner, R., Broll, W., Grimm, P., & Jung, B. (2019). <em>Virtual und Augmented Reality (VR/AR): Grundlagen und Methoden der Virtuellen und Augmentierten Realität</em>. Springer Vieweg.</p>
+    </footer>
 </body>
 </html>
