@@ -26,9 +26,22 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         h2 {
             color: #333;
+        }
+        section p {
+            flex: 1;
+            margin-right: 20px;
+        }
+        section img {
+            max-width: 35%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         footer {
             text-align: center;
@@ -46,48 +59,53 @@
             text-decoration: underline;
         }
     </style>
-        <nav style="background-color: #444; padding: 1em;">
-            <ul style="list-style: none; padding: 0; display: flex; justify-content: center;">
-                <li style="margin: 0 1em;"><a href="index.html" style="color: #fff; text-decoration: none;">Startseite</a></li>
-                <li style="margin: 0 1em;"><a href="definition.html" style="color: #fff; text-decoration: none;">Definition</a></li>
-                <li style="margin: 0 1em;"><a href="vorteile Nachteile.html" style="color: #fff; text-decoration: none;">Vorteile/Nachteile</a></li>
-                <li style="margin: 0 1em;"><a href="applications.html" style="color: #fff; text-decoration: none;">Anwendungen</a></li>
-                <li style="margin: 0 1em;"><a href="Entwicklung.html" style="color: #fff; text-decoration: none;">Entwicklung</a></li>
-                <li style="margin: 0 1em;"><a href="Perspektive.html" style="color: #fff; text-decoration: none;">Perspektive</a></li>
-                <li style="margin: 0 1em;"><a href="tracking.html" style="color: #fff; text-decoration: none;">Trackingtechnologien</a></li>
-                <li style="margin: 0 1em;"><a href="Software.html" style="color: #fff; text-decoration: none;">Software</a></li>
-                <li style="margin: 0 1em;"><a href="Herausforderungen.html" style="color: #fff; text-decoration: none;">Herausforderungen</a></li>
-                <li style="margin: 0 1em;"><a href="Faktoren.html" style="color: #fff; text-decoration: none;">Beeinflussende Faktoren</a></li>
-            </ul>
 </head>
 <body>
+    <nav style="background-color: #444; padding: 1em;">
+        <ul style="list-style: none; padding: 0; display: flex; justify-content: center;">
+            <li style="margin: 0 1em;"><a href="index.html" style="color: #fff; text-decoration: none;">Startseite</a></li>
+            <li style="margin: 0 1em;"><a href="definition.html" style="color: #fff; text-decoration: none;">Definition</a></li>
+            <li style="margin: 0 1em;"><a href="vorteile Nachteile.html" style="color: #fff; text-decoration: none;">Vorteile/Nachteile</a></li>
+            <li style="margin: 0 1em;"><a href="applications.html" style="color: #fff; text-decoration: none;">Anwendungen</a></li>
+            <li style="margin: 0 1em;"><a href="Entwicklung.html" style="color: #fff; text-decoration: none;">Entwicklung</a></li>
+            <li style="margin: 0 1em;"><a href="Perspektive.html" style="color: #fff; text-decoration: none;">Perspektive</a></li>
+            <li style="margin: 0 1em;"><a href="tracking.html" style="color: #fff; text-decoration: none;">Trackingtechnologien</a></li>
+            <li style="margin: 0 1em;"><a href="Software.html" style="color: #fff; text-decoration: none;">Software</a></li>
+            <li style="margin: 0 1em;"><a href="Herausforderungen.html" style="color: #fff; text-decoration: none;">Herausforderungen</a></li>
+            <li style="margin: 0 1em;"><a href="Faktoren.html" style="color: #fff; text-decoration: none;">Beeinflussende Faktoren</a></li>
+        </ul>
     <header>
         <h1>Trackingtechnologien in VR/AR</h1>
     </header>
     <main>
         <section>
-            <h2>Acoustic Tracking</h2>
-            <p>Das akustische Tracking verwendet Schallwellen, um die Position eines Objekts im Raum zu bestimmen. Dabei werden von einem Sender Schallimpulse ausgesendet, die von Mikrofonen empfangen werden. Die Laufzeitdifferenz der Schallwellen zwischen Sender und Empfänger wird genutzt, um die Distanz zu berechnen. Dieses Verfahren funktioniert auch in Umgebungen mit schlechten Sichtverhältnissen. Allerdings ist es anfällig für Umgebungsgeräusche, die das Signal stören können. Zudem hat das akustische Tracking eine begrenzte Reichweite und weist eine relativ hohe Latenz auf, was es für einige Anwendungen weniger geeignet macht.</p>
+            <div>
+                <h2>Acoustic Tracking</h2>
+                <p>Das akustische Tracking verwendet Schallwellen, um die Position eines Objekts im Raum zu bestimmen. Dabei werden von einem Sender Schallimpulse ausgesendet, die von Mikrofonen empfangen werden. Die Laufzeitdifferenz der Schallwellen zwischen Sender und Empfänger wird genutzt, um die Distanz zu berechnen. Dieses Verfahren funktioniert auch in Umgebungen mit schlechten Sichtverhältnissen. Allerdings ist es anfällig für Umgebungsgeräusche, die das Signal stören können. Zudem hat das akustische Tracking eine begrenzte Reichweite und weist eine relativ hohe Latenz auf, was es für einige Anwendungen weniger geeignet macht.</p>
+            </div>
         </section>
+
         <section>
-            <h2>Magnetfeldbasiertes Tracking</h2>
-            <p>Das magnetfeldbasierte Tracking nutzt Veränderungen in Magnetfeldern, um die Position eines Objekts zu bestimmen. Ein Sender erzeugt ein Magnetfeld, dessen Änderungen von Empfängern registriert werden. Diese Methode funktioniert auch ohne direkte Sichtverbindung zwischen Sender und Empfänger, was sie besonders in Innenräumen nützlich macht. Ein Nachteil des magnetfeldbasierten Trackings ist seine Anfälligkeit gegenüber metallischen Objekten und elektromagnetischen Störungen, die die Messgenauigkeit beeinträchtigen können.</p>
+            <div>
+                <h2>Kamerabasiertes Tracking</h2>
+                <p>Kamerabasiertes Tracking nutzt Kameras, um Bilder der Umgebung aufzunehmen und daraus die Position und Orientierung eines Objekts zu bestimmen. Eine Variante dieses Verfahrens ist das markenbasierte Tracking, bei dem Marker wie QR-Codes im Bild erkannt werden. Eine andere Variante ist das merkmalsbasierte Tracking, bei dem natürliche Merkmale im Bild verwendet werden. Das SLAM-Verfahren (Simultaneous Localization and Mapping) kombiniert Tracking mit der Erstellung einer Karte der Umgebung in Echtzeit. Kamerabasiertes Tracking wird häufig in AR-Anwendungen eingesetzt, da es keine zusätzliche Hardware außer einer Kamera benötigt.</p>
+            </div>
+            <img src="./bilder/kameratracking.png" alt="Kamerabasiertes Tracking">
         </section>
+
         <section>
-            <h2>Laserbasiertes Tracking</h2>
-            <p>Das laserbasierte Tracking verwendet rotierende Laserstrahlen, die von Basisstationen ausgesendet werden. Sensoren auf dem zu trackenden Objekt erfassen diese Strahlen und berechnen die Position anhand der Zeitdifferenzen, mit denen die Laserstrahlen auf die Sensoren treffen. Die Synchronisation erfolgt durch Infrarotsignale. Laserbasiertes Tracking ist äußerst präzise und kann über große Entfernungen eingesetzt werden. Allerdings kann es durch Verdeckungen, wie beispielsweise den Körper des Nutzers, gestört werden, was in bestimmten Szenarien problematisch sein kann.</p>
+            <div>
+                <h2>Finger Tracking</h2>
+                <p>Finger Tracking verfolgt die Position und Bewegung von Fingern in virtuellen Umgebungen. Mechanische Tracking-Methoden verwenden spezielle Datenhandschuhe mit integrierten Sensoren, um die Fingerpositionen zu erfassen. Optische Tracking-Methoden nutzen Kameras, die Fingerbewegungen basierend auf Infrarot- oder Tiefendaten erkennen. Aufgrund der hohen Freiheitsgrade der menschlichen Hand, mit 27 Freiheitsgraden pro Hand, ist eine präzise Erfassung eine Herausforderung. Finger Tracking findet vor allem in der Gestensteuerung und in virtuellen Montagesimulationen Anwendung.</p>
+            </div>
+            <img src="./bilder/finger tracking.png" alt="Finger Tracking">
         </section>
+
         <section>
-            <h2>Kamerabasiertes Tracking</h2>
-            <p>Kamerabasiertes Tracking nutzt Kameras, um Bilder der Umgebung aufzunehmen und daraus die Position und Orientierung eines Objekts zu bestimmen. Eine Variante dieses Verfahrens ist das markenbasierte Tracking, bei dem Marker wie QR-Codes im Bild erkannt werden. Eine andere Variante ist das merkmalsbasierte Tracking, bei dem natürliche Merkmale im Bild verwendet werden. Das SLAM-Verfahren (Simultaneous Localization and Mapping) kombiniert Tracking mit der Erstellung einer Karte der Umgebung in Echtzeit. Kamerabasiertes Tracking wird häufig in AR-Anwendungen eingesetzt, da es keine zusätzliche Hardware außer einer Kamera benötigt.</p>
-        </section>
-        <section>
-            <h2>Finger Tracking</h2>
-            <p>Finger Tracking verfolgt die Position und Bewegung von Fingern in virtuellen Umgebungen. Mechanische Tracking-Methoden verwenden spezielle Datenhandschuhe mit integrierten Sensoren, um die Fingerpositionen zu erfassen. Optische Tracking-Methoden nutzen Kameras, die Fingerbewegungen basierend auf Infrarot- oder Tiefendaten erkennen. Aufgrund der hohen Freiheitsgrade der menschlichen Hand, mit 27 Freiheitsgraden pro Hand, ist eine präzise Erfassung eine Herausforderung. Finger Tracking findet vor allem in der Gestensteuerung und in virtuellen Montagesimulationen Anwendung.</p>
-        </section>
-        <section>
-            <h2>Eye Tracking</h2>
-            <p>Eye Tracking verfolgt die Blickrichtung des Nutzers, indem die Position der Pupillen und Reflexionen auf der Hornhaut erkannt werden. Dieses Verfahren erfordert eine individuelle Kalibrierung, um eine genaue Erfassung der Blickrichtung zu gewährleisten. Zur Messung wird Infrarotlicht verwendet, das Reflexionen im Auge erzeugt, die von Sensoren erfasst werden. Eye Tracking ermöglicht natürlichere Interaktionen in VR, beispielsweise durch Blicksteuerung, und kann zudem die Renderprozesse in Head-Mounted Displays optimieren, indem nur die Bereiche hochauflösend gerendert werden, auf die der Nutzer tatsächlich schaut.</p>
+            <div>
+                <h2>Eye Tracking</h2>
+                <p>Eye Tracking verfolgt die Blickrichtung des Nutzers, indem die Position der Pupillen und Reflexionen auf der Hornhaut erkannt werden. Dieses Verfahren erfordert eine individuelle Kalibrierung, um eine genaue Erfassung der Blickrichtung zu gewährleisten. Zur Messung wird Infrarotlicht verwendet, das Reflexionen im Auge erzeugt, die von Sensoren erfasst werden. Eye Tracking ermöglicht natürlichere Interaktionen in VR, beispielsweise durch Blicksteuerung, und kann zudem die Renderprozesse in Head-Mounted Displays optimieren, indem nur die Bereiche hochauflösend gerendert werden, auf die der Nutzer tatsächlich schaut.</p>
+            </div>
         </section>
     </main>
     <footer>
