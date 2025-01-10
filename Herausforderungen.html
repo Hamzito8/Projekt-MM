@@ -14,9 +14,9 @@
         }
         h1 {
             text-align: center;
-            color: #333;
+            color: #08ed2b;
         }
-        .content {
+        .inhalt {
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
@@ -33,13 +33,40 @@
             margin-top: 40px;
             font-size: 14px;
         }
+        .contact-us {
+            background-color: #e4f0f6;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .contact-us input, .contact-us textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-us button {
+            padding: 10px 20px;
+            background-color: #050df7;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-us button:hover {
+            background-color: #0043d1;
+        }
+    
     </style>
 </head>
 <body>
-    <nav style="background-color: #444; padding: 1em;">
+    <nav style="background-color: #1b03f4; padding: 1em;">
         <ul style="list-style: none; padding: 0; display: flex; justify-content: center;">
             <li style="margin: 0 1em;"><a href="index.html" style="color: #fff; text-decoration: none;">Startseite</a></li>
-            <li style="margin: 0 1em;"><a href="definition.html" style="color: #fff; text-decoration: none;">Definition</a></li>
             <li style="margin: 0 1em;"><a href="vorteile Nachteile.html" style="color: #fff; text-decoration: none;">Vorteile/Nachteile</a></li>
             <li style="margin: 0 1em;"><a href="applications.html" style="color: #fff; text-decoration: none;">Anwendungen</a></li>
             <li style="margin: 0 1em;"><a href="Entwicklung.html" style="color: #fff; text-decoration: none;">Entwicklung</a></li>
@@ -53,7 +80,7 @@
 
     <h1>VR und AR: Potenziale und Herausforderungen</h1>
     
-    <div class="content">
+    <div class="inhalt">
         <p>VR und AR bieten ein riesiges Potenzial, stehen aber vor einer Menge von Herausforderungen, die ihren Alltag beeinträchtigen können:</p>
         <ul>
             <li><strong>1) Die hohen Kosten der Geräte:</strong> z.B. VR-Headsets oder AR-Brillen, die aus präzisen Sensoren und leistungsstarken Prozessoren bestehen und auch zu einem hohen Energieverbrauch führen können.</li>
@@ -63,10 +90,34 @@
             <li><strong>5) Datenschutz (AR):</strong> Risiko für Hackerangriffe und Datenmissbrauch.</li>
         </ul>
     </div>
+    <div class="contact-us">
+        <h2>Kontaktformular</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+            <input type="tel" id="tel" name="tel" placeholder="Telefonnummer" required>
+            <input type="email" id="email" name="email" placeholder="E-Mail-Adresse" required>
+            <textarea id="message" name="message" placeholder="Ihre Nachricht" rows="4"></textarea>
+            <button type="submit">Absenden</button>
+        </form>
+    </div>
 
     <footer>
         <p>Quellen: Virtual and Augmented Reality. Status quo, Herausforderungen und zukünftige Entwicklungen, Büro für Technikfolgen-Abschätzung beim Deutschen Bundestag.</p>
     </footer>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var tel = document.getElementById("tel").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
 
+            if (name == "" || tel == "" || email == "") {
+                alert("Bitte füllen Sie alle erforderlichen Felder aus.");
+                return false;
+            }
+            alert("Vielen Dank für Ihre Nachricht!");
+            return true;
+        }
+    </script>
 </body>
 </html>

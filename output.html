@@ -3,95 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Output VR&AR</title>
+    <title>Output VR & AR</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
         }
-        h1 {
-            color: #4CAF50;
-        }
-        h2 {
+
+        h1, h2 {
             color: #333;
+            text-align: center;
         }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2em;
+            color: #fc0404;
+        }
+
+        nav {
+            background-color: #050df7;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .context {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
         ul {
             list-style-type: disc;
             margin-left: 20px;
         }
+
         p {
             font-size: 1.1em;
-        }
-        .highlight {
-            font-weight: bold;
-        }
-        .quote {
-            font-style: italic;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            padding: 15px 3px;
-            display: block;
-            transition: background-color 0.3s;
+            margin: 10px 0;
         }
 
-        nav ul li a:hover {
-            background-color: #000000;
-            border-radius: 5px;
+        .newcolor {
+            font-weight: bold;
+            color: #008cff;
+            text-align: center;
+            margin-top: 20px;
         }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 30px;
+        }
+
+        .contact-us {
+            background-color: #e4f0f6;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .contact-us input, .contact-us textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-us button {
+            padding: 10px 20px;
+            background-color: #050df7;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-us button:hover {
+            background-color: #0043d1;
+        }
+
     </style>
 </head>
 <body>
-    <nav style="background-color: #444; padding: 1em;">
-        <ul style="list-style: none; padding: 0; display: flex; justify-content: center;">
-            <li style="margin: 0 1em;"><a href="index.html" style="color: #fff; text-decoration: none;">Startseite</a></li>
-            <li style="margin: 0 1em;"><a href="vorteile Nachteile.html" style="color: #fff; text-decoration: none;">Vorteile/Nachteile</a></li>
-            <li style="margin: 0 1em;"><a href="applications.html" style="color: #fff; text-decoration: none;">Anwendungen</a></li>
-            <li style="margin: 0 1em;"><a href="Entwicklung.html" style="color: #fff; text-decoration: none;">Entwicklung</a></li>
-            <li style="margin: 0 1em;"><a href="Perspektive.html" style="color: #fff; text-decoration: none;">Perspektive</a></li>
-            <li style="margin: 0 1em;"><a href="tracking.html" style="color: #fff; text-decoration: none;">Trackingtechnologien</a></li>
-            <li style="margin: 0 1em;"><a href="output.html" style="color: #fff; text-decoration: none;">Outputmöglichkeiten</a></li>
-            <li style="margin: 0 1em;"><a href="Herausforderungen.html" style="color: #fff; text-decoration: none;">Herausforderungen</a></li>
-            <li style="margin: 0 1em;"><a href="Faktoren.html" style="color: #fff; text-decoration: none;">Beeinflussende Faktoren</a></li>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="vorteile Nachteile.html">Vorteile/Nachteile</a></li>
+            <li><a href="applications.html">Anwendungen</a></li>
+            <li><a href="Entwicklung.html">Entwicklung</a></li>
+            <li><a href="Perspektive.html">Perspektive</a></li>
+            <li><a href="tracking.html">Trackingtechnologien</a></li>
+            <li><a href="output.html">Outputmöglichkeiten</a></li>
+            <li><a href="Herausforderungen.html">Herausforderungen</a></li>
+            <li><a href="Faktoren.html">Beeinflussende Faktoren</a></li>
         </ul>
     </nav>
-    </nav>
-    <h1>Output VR&AR</h1>
 
-    <h2>Multisensorische Kanäle:</h2>
-    <ul>
-        <li>Visuelle, akustische und haptische Reize im Fokus.</li>
-    </ul>
+    <div class="context">
+        <h1>Output VR & AR</h1>
 
-    <h2>Visuelle Ausgabe:</h2>
-    <ul>
-        <li>Hauptgeräte: HMDs, stationäre Systeme wie CAVEs.</li>
-        <li>Anforderungen: Hohe Auflösung, breites Sichtfeld, Stereoskopie.</li>
-    </ul>
+        <h2>Multisensorische Kanäle</h2>
+        <ul>
+            <li>Visuelle, akustische und haptische Reize im Fokus.</li>
+        </ul>
 
-    <h2>Akustische Ausgabe:</h2>
-    <ul>
-        <li>Geräte: Lautsprecher, binaurale Systeme.</li>
-        <li>Wichtige Aspekte: Lautsprecherpositionierung, Raumklang.</li>
-    </ul>
+        <h2>Visuelle Ausgabe</h2>
+        <ul>
+            <li>Hauptgeräte: HMDs, stationäre Systeme wie CAVEs.</li>
+            <li>Anforderungen: Hohe Auflösung, breites Sichtfeld, Stereoskopie.</li>
+        </ul>
 
-    <h2>Haptische Ausgabe:</h2>
-    <ul>
-        <li>Geräte: Handschuhe…</li>
-        <li>Funktionen: Taktiles Feedback, Kraftrückkopplung.</li>
-    </ul>
+        <h2>Akustische Ausgabe</h2>
+        <ul>
+            <li>Geräte: Lautsprecher, binaurale Systeme.</li>
+            <li>Wichtige Aspekte: Lautsprecherpositionierung, Raumklang.</li>
+        </ul>
 
-    <h2>Ziel:</h2>
-    <p class="highlight">Realistic integration of multisensory stimuli for maximum immersion.</p>
+        <h2>Haptische Ausgabe</h2>
+        <ul>
+            <li>Geräte: Handschuhe, Anzüge.</li>
+            <li>Funktionen: Taktiles Feedback, Kraftrückkopplung.</li>
+        </ul>
 
-    <h2>Quellen:</h2>
-    <ul>
-        <li>Visuelle Ausgabe: S. 170–191.</li>
-        <li>Akustische Ausgabe: S. 211.</li>
-        <li>Haptische Ausgabe: S. 212–215.</li>
-    </ul>
+        <h2>Ziel</h2>
+        <p class="newcolor">Realistische Integration multisensorischer Reize für maximale Immersion.</p>
+
+        
+        <div class="contact-us">
+            <h2>Kontaktformular</h2>
+            <form id="contactForm" onsubmit="return validateForm()">
+                <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+                <input type="tel" id="tel" name="tel" placeholder="Telefonnummer" required>
+                <input type="email" id="email" name="email" placeholder="E-Mail-Adresse" required>
+                <textarea id="message" name="message" placeholder="Ihre Nachricht" rows="4"></textarea>
+                <button type="submit">Absenden</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <p> Quellen: 
+            <ul>
+                <li>Visuelle Ausgabe: S. 170–191.</li>
+                <li>Akustische Ausgabe: S. 211.</li>
+                <li>Haptische Ausgabe: S. 212–215.</li>
+            </ul>
+        </p>
+    </footer>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var tel = document.getElementById("tel").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            if (name == "" || tel == "" || email == "") {
+                alert("Bitte füllen Sie alle erforderlichen Felder aus.");
+                return false;
+            }
+            alert("Vielen Dank für Ihre Nachricht!");
+            return true;
+        }
+    </script>
 
 </body>
 </html>
+
