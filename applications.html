@@ -39,12 +39,35 @@
             padding: 10px 0;
             background-color: #333;
             color: white;
-            position: fixed;
             bottom: 0;
             width: 100%;
         }
         a {
             color: #4CAF50;
+        }
+        .contact-us {
+            background-color: #e4f0f6;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .contact-us input, .contact-us textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .contact-us button {
+            padding: 10px 20px;
+            background-color: #050df7;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-us button:hover {
+            background-color: #0043d1;
         }
     </style>
 </head>
@@ -84,8 +107,33 @@
             <img src = "./bilder/ar in navigation.jpg" alt = "AR in Navigation" style = "max-width: 100%; height: auto; display: block; margin: 20px 0;">
         </section>
     </main>
-    <footer>
-        <p>Quelle: Dörner, R., Broll, W., Grimm, P., & Jung, B. (2019). <em>Virtual und Augmented Reality (VR/AR): Grundlagen und Methoden der Virtuellen und Augmentierten Realität</em>. Springer Vieweg.</p>
-    </footer>
+    <div class="contact-us">
+        <h2>Kontaktformular</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+            <input type="tel" id="tel" name="tel" placeholder="Telefonnummer" required>
+            <input type="email" id="email" name="email" placeholder="E-Mail-Adresse" required>
+            <textarea id="message" name="message" placeholder="Ihre Nachricht" rows="4"></textarea>
+            <button type="submit">Absenden</button>
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var tel = document.getElementById("tel").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            if (name == "" || tel == "" || email == "") {
+                alert("Bitte füllen Sie alle erforderlichen Felder aus.");
+                return false;
+            }
+            alert("Vielen Dank für Ihre Nachricht!");
+            return true;
+        }
+    </script>
+        <footer>
+            <p>Quelle: Dörner, R., Broll, W., Grimm, P., & Jung, B. (2019). <em>Virtual und Augmented Reality (VR/AR): Grundlagen und Methoden der Virtuellen und Augmentierten Realität</em>. Springer Vieweg.</p>
+        </footer>
 </body>
 </html>
