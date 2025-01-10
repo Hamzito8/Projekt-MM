@@ -20,7 +20,6 @@
         nav a:hover {
             text-decoration: underline;
         }
-
         .content-wrapper {
             display: flex;
             align-items: flex-start;
@@ -29,10 +28,11 @@
         }
         .text-content {
             width: 60%;
+            padding-right: 2em;
         }
         .image-content {
             width: 35%;
-            text-align: right;
+            text-align: center;
         }
         .image-content img {
             max-width: 100%;
@@ -40,9 +40,66 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
+        footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 2em;
+            margin-top: 2em;
+        }
+        footer form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        footer input, footer textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        footer button {
+            background-color: #11f514;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer button:hover {
+            background-color: #0dc411;
+        }
     </style>
 </head>
 <body>
+
+    <!-- JavaScript für Formular-Validierung -->
+    <script>
+        function sendEmail(event) {
+            event.preventDefault(); // Verhindert das Standardverhalten des Formulars
+
+            // Holen der Formulareingaben
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Überprüfen, ob alle Felder ausgefüllt sind
+            if (name === '' || email === '' || message === '') {
+                alert('Bitte alle Felder ausfüllen.');
+                return;
+            }
+
+            // E-Mail senden
+            const mailtoLink = `mailto:fifaunitedhater@gmail.com?subject=Kontakt von ${name}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0ANachricht: ${message}`;
+            window.location.href = mailtoLink;
+
+            // Optional: Formular zurücksetzen
+            document.getElementById('contact-form').reset();
+        }
+    </script>
+
     <nav style="background-color: #444; padding: 1em;">
         <ul style="list-style: none; padding: 0; display: flex; justify-content: center;">
             <li style="margin: 0 1em;"><a href="index.html" style="color: #fff; text-decoration: none;">Startseite</a></li>
@@ -56,48 +113,60 @@
             <li style="margin: 0 1em;"><a href="Faktoren.html" style="color: #fff; text-decoration: none;">Beeinflussende Faktoren</a></li>
         </ul>
     </nav>
-    </nav>
-    <header>
-        <h1>Ein Überblick über die Technologie VR/AR</h1>
-    </header>
+        <main>
+            <header>
+                <h1>Ein Überblick über die Technologie VR/AR</h1>
+            </header>
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>Definition von VR und AR</h2>
+                    <h3>Nach Experten</h3>
+                    <ul>
+                        <li>“VR technology combines multiple human–computer interfaces to provide various sensations (visual, haptic, auditory, etc.), which give the user a sense of presence in the virtual world.” 
+                            <br>(Seth, A., Vance, J. und Oliver, J.) [1]</li>
+                    </ul>
+                    <ul>
+                        <li>„Virtual Reality (VR) refers to the use of three-dimensional displays and interaction devices to explore real-time computer-generated environments.“ 
+                            <br> (Steve Bryson) [2]</li>
+                    </ul>
+                    <ul>
+                        <li>„Virtual Reality refers to immersive, interactive, multi-sensory, viewer-centered, three-dimensional computer-generated environments and the combination of technologies required to build these environments.“ 
+                            <br>(Carolina Cruz-Neira) [3]</li>
+                    </ul>
+                    <ul>
+                        <li>„The promise of immersive virtual environments is one of a three-dimensional environment in which a user can directly perceive and interact with three-dimensional virtual objects. The underlying belief motivating most virtual reality (VR) research is that this will lead to more natural and effective human-computer interfaces.“ 
+                            <br>(Mine) [4]</li>
+                    </ul>
+        
+                    <h3>AR und VR, sind sie gleich?</h3>
+                    <p>
+                        AR (Augmented Reality) bezeichnet Technologie, die digitale Informationen (Bilder, Töne) und andere virtuelle Elemente in Echtzeit über die reale Welt einblenden.  
+                        VR (Virtual Reality) ist eine computergenerierte Simulation in einer dreidimensionalen Welt, woran die Nutzer eintauchen können.
+                    </p>
+                </div>
+                <div class="image-content">
+                    <img src="./bilder/VR AR Unterschied.png" alt="VR und AR Unterschied">
+                    <p style="text-align: center; font-size: 0.9em; color: #555;">Dörner, R., Broll, W., Grimm, P. und Jung, B. (Hrsg.), 2019. Virtual und Augmented Reality (VR/AR): Grundlagen und Methoden der Virtuellen und Augmentierten Realität</p>
+                </div>
+            </div>
+        </main>
     <main>
-        <section>
-            <h2>Definition von VR und AR</h2>
-            <h3>Nach Experten</h3>
-            <ul>
-                <li>“VR technology combines multiple human–computer interfaces to provide various sensations (visual, haptic, auditory, etc.), which give the user a sense of presence in the virtual world.” 
-                    <br>(Seth, A., Vance, J. und Oliver, J.) [1]</li>
-            </ul>
-            <ul>
-                <li>„Virtual Reality (VR) refers to the use of three-dimensional displays and interaction devices to explore real-time computer-generated environments.“ 
-                    <br> (Steve Bryson) [2]</li>
-            </ul>
-            <ul>
-                <li>„Virtual Reality refers to immersive, interactive, multi-sensory, viewer-centered, three-dimensional computer-generated environments and the combination of technologies required to build these environments.“ 
-                    <br>(Carolina Cruz-Neira) [3]</li>
-            </ul>
-            <ul>
-                <li>„The promise of immersive virtual environments is one of a three-dimensional environment in which a user can directly perceive and interact with three-dimensional virtual objects. The underlying belief motivating most virtual reality (VR) research is that this will lead to more natural and effective human-computer interfaces.“ 
-                    <br>(Mine) [4]</li>
-            </ul>
-    
-            <h3> AR und VR, sind sie gleich?</h3>
-            <p>
-                AR (Augmented Reality) bezeichnet Technologie, die digitale Informationen (Bilder, Töne) und andere virtuelle Elemente in Echtzeit über die reale Welt einblenden.  
-                VR (Virtual Reality) ist eine computergenerierte Simulation in einer dreidimensionalen Welt, woran die Nutzer eintauchen können.
-            </p>
-            </div>
-            <div class="image-content">
-                <img src="./bilder/VR AR Unterschied.png" alt="VR und AR Unterschied">
-                <p style="text-align: center; font-size: 0.9em; color: #555;">Dörner, R., Broll, W., Grimm, P. und Jung, B. (Hrsg.), 2019. Virtual und Augmented Reality (VR/AR): Grundlagen und Methoden der Virtuellen und Augmentierten Realität</p>
-            </div>
+        <div class="content-wrapper">
+            <!-- Inhalt hier -->
         </div>
     </main>
-<footer style="background-color: #444; color: #fff; text-align: center; padding: 1em; margin-top: 2em;">
-    <h3></h3>
-    <ul style="list-style: none; padding: 0;">
-    </ul>
-</footer>
+
+    <!-- Kontaktformular im Footer -->
+    <footer>
+        <h3>Kontaktieren Sie uns</h3>
+        <form id="contact-form" onsubmit="sendEmail(event)">
+            <input type="text" id="name" placeholder="Ihr Name" required>
+            <input type="email" id="email" placeholder="Ihre E-Mail-Adresse" required>
+            <textarea id="message" placeholder="Ihre Nachricht" rows="5" required></textarea>
+            <button type="submit">Nachricht senden</button>
+        </form>
+    </footer>
+
 </body>
 </html>
 
