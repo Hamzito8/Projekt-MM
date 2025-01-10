@@ -3,60 +3,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faktoren, die VR und AR beeinflussen</title>
+    <title>Beeinflussende Faktoren für VR/AR</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            line-height: 1.6;
         }
+
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
+            background-color: #007bff;
+            color: white;
             text-align: center;
+            padding: 20px 0;
+            font-size: 1.8em;
         }
+
         main {
-            padding: 20px;
+            padding: 30px;
+            max-width: 1100px;
+            margin: auto;
         }
-        section {
-            margin-bottom: 20px;
-        }
+
         h2 {
             color: #333;
+            margin-top: 0;
+            font-size: 1.5em;
         }
-        ul {
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        /* Akkordeon-Stil */
+        .accordion-container {
+            margin-bottom: 10px;
+        }
+
+        .accordion {
+            display: none;
+        }
+
+        .accordion-label {
+            background-color: #343a40;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .accordion-label:hover {
+            background-color: #495057;
+        }
+
+        .panel {
+            display: none;
+            padding: 15px;
+            background-color: #f1f1f1;
+            border-left: 4px solid #007bff;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .accordion:checked + .accordion-label + .panel {
+            display: block;
+        }
+
+        .panel ul {
             list-style-type: none;
-            padding: 0;
+            padding-left: 0;
         }
-        li {
-            background-color: #fff;
-            margin: 5px 0;
-            padding: 10px;
-            border: 1px solid #ddd;
+
+        .panel li {
+            padding-left: 15px;
+            position: relative;
         }
-        nav a:hover {
-            text-decoration: underline;
-            color: #fff;
+
+        .panel li::before {
+            content: "✓";
+            color: #007bff;
+            position: absolute;
+            left: 0;
+            top: 0;
         }
-        nav a {
-            color: #ee1414;
-            text-decoration: none;
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 0.9em;
         }
+
     </style>
 </head>
 <body>
     <nav style="background-color: #444; padding: 1em;">
         <ul style="list-style: none; padding: 0; display: flex; justify-content: center;">
             <li style="margin: 0 1em;"><a href="index.html" style="color: #fff; text-decoration: none;">Startseite</a></li>
+            <li style="margin: 0 1em;"><a href="definition.html" style="color: #fff; text-decoration: none;">Definition</a></li>
             <li style="margin: 0 1em;"><a href="vorteile Nachteile.html" style="color: #fff; text-decoration: none;">Vorteile/Nachteile</a></li>
             <li style="margin: 0 1em;"><a href="applications.html" style="color: #fff; text-decoration: none;">Anwendungen</a></li>
             <li style="margin: 0 1em;"><a href="Entwicklung.html" style="color: #fff; text-decoration: none;">Entwicklung</a></li>
             <li style="margin: 0 1em;"><a href="Perspektive.html" style="color: #fff; text-decoration: none;">Perspektive</a></li>
             <li style="margin: 0 1em;"><a href="tracking.html" style="color: #fff; text-decoration: none;">Trackingtechnologien</a></li>
-            <li style="margin: 0 1em;"><a href="output.html" style="color: #fff; text-decoration: none;">Outputmöglichkeiten</a></li>
+            <li style="margin: 0 1em;"><a href="Software.html" style="color: #fff; text-decoration: none;">Software</a></li>
             <li style="margin: 0 1em;"><a href="Herausforderungen.html" style="color: #fff; text-decoration: none;">Herausforderungen</a></li>
             <li style="margin: 0 1em;"><a href="Faktoren.html" style="color: #fff; text-decoration: none;">Beeinflussende Faktoren</a></li>
         </ul>
     </nav>
+    <header>
+        Beeinflussende Faktoren für VR/AR
+    </header>
+
+    <main>
+        <div class="section">
+            <h2>1. Technologische Faktoren</h2>
+            <div class="accordion-container">
+                <input type="checkbox" class="accordion" id="hardware">
+                <label class="accordion-label" for="hardware">Hardware</label>
+                <div class="panel">
+                    <ul>
+                        <li>Qualität von Displays, Sensoren und Prozessoren</li>
+                        <li>Entwicklungen in Head-Mounted Displays (HMDs) und Tracking-Technologien</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-container">
+                <input type="checkbox" class="accordion" id="simulationslatenz">
+                <label class="accordion-label" for="simulationslatenz">Simulationslatenz</label>
+                <div class="panel">
+                    <ul>
+                        <li>Optimierung durch Techniken wie Multipipe-Systeme oder Foveated Rendering zur Verringerung der Verzögerungen</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-container">
+                <input type="checkbox" class="accordion" id="rendering">
+                <label class="accordion-label" for="rendering">Rendering-Techniken</label>
+                <div class="panel">
+                    <ul>
+                        <li>Single Pass Stereo und Multi-View Rendering für effizientere Berechnungen bei stereoskopischen Darstellungen</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2. Physiologische und psychologische Aspekte</h2>
+            <div class="accordion-container">
+                <input type="checkbox" class="accordion" id="cybersickness">
+                <label class="accordion-label" for="cybersickness">Cybersickness</label>
+                <div class="panel">
+                    <ul>
+                        <li>Ursachen wie Latenz, Bildwiederholrate und sensorische Konflikte</li>
+                        <li>Individuelle Unterschiede in der Anfälligkeit</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-container">
+                <input type="checkbox" class="accordion" id="sensorische-wahrnehmung">
+                <label class="accordion-label" for="sensorische-wahrnehmung">Sensorische Wahrnehmung</label>
+                <div class="panel">
+                    <ul>
+                        <li>Realismus durch multisensorische Integration (Sehen, Hören, Tastsinn) zur Steigerung der Immersion</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-container">
+                <input type="checkbox" class="accordion" id="priming-effekte">
+                <label class="accordion-label" for="priming-effekte">Priming-Effekte</label>
+                <div class="panel">
+                    <ul>
+                        <li>Veränderungen in Verhalten und Selbstwahrnehmung durch VR-Avatare</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>3. Wirtschaftliche und gesellschaftliche Faktoren</h2>
+            <div class="accordion-container">
+                <input type="checkbox" class="accordion" id="kosten-der-technologie">
+                <label class="accordion-label" for="kosten-der-technologie">Kosten der Technologie</label>
+                <div class="panel">
+                    <ul>
+                        <li>Bezahlbarkeit von Hardware und Verfügbarkeit von Softwarelösungen</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-container">
+                <input type="checkbox" class="accordion" id="akzeptanz">
+                <label class="accordion-label" for="akzeptanz">Akzeptanz</label>
+                <div class="panel">
+                    <ul>
+                        <li>Einfluss von Alter, Kultur und Technologieerfahrung auf die Nutzungsbereitschaft</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-container">
+                <input type="checkbox" class="accordion" id="anwendungsfaelle">
+                <label class="accordion-label" for="anwendungsfaelle">Anwendungsfälle</label>
+                <div class="panel">
+                    <ul>
+                        <li>Wachsende Einsatzmöglichkeiten in Bildung, Medizin, Unterhaltung und Industrie</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>4. Ethische und rechtliche Aspekte</h2>
+            <div class="accordion-container">
+                <input type="checkbox" class="accordion" id="datenschutz">
+                <label class="accordion-label" for="datenschutz">Datenschutz</label>
+                <div class="panel">
+                    <ul>
+                        <li>Sensible Daten wie Bewegungs- und Blickverfolgung erfordern strikte Schutzmaßnahmen</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-container">
+                <input type="checkbox" class="accordion" id="gesundheitliche-risiken">
+                <label class="accordion-label" for="gesundheitliche-risiken">Gesundheitliche Risiken</label>
+                <div class="panel">
+                    <ul>
+                        <li>Langfristige Auswirkungen intensiver Nutzung auf Psyche und Körper</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>5. Forschung und Innovation</h2>
+            <div class="accordion-container">
+                <input type="checkbox" class="accordion" id="neue-technologien">
+                <label class="accordion-label" for="neue-technologien">Neue Technologien</label>
+                <div class="panel">
+                    <ul>
+                        <li>Fortlaufende Entwicklungen in Tracking, Rendering und Benutzeroberflächen</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-container">
+                <input type="checkbox" class="accordion" id="interdisziplinaere-ansaetze">
+                <label class="accordion-label" for="interdisziplinaere-ansaetze">Interdisziplinäre Ansätze</label>
+                <div class="panel">
+                    <ul>
+                        <li>Kombination von Informatik, Neurowissenschaften und Design zur Verbesserung von VR/AR-Systemen</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; Quellen:Dörner, R., Broll, W., Grimm, P., & Jung, B. (Hrsg.). (2019). Virtual und Augmented Reality (VR/AR): Grundlagen und Methoden der Virtuellen und Augmentierten Realität (2. Auflage). Springer-Verlag GmbH. Verwendete Seiten: 1, 8, 12–14.
+    </footer>
+</body>
+</html>
+
