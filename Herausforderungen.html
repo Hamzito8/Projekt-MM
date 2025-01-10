@@ -14,7 +14,13 @@
         }
         h1 {
             text-align: center;
-            color: #08ed2b;
+            color: #ffffff;
+        }
+        header {
+            background-color: #d40b0b;
+            color: white;
+            text-align: center;
+            padding : 10px 0;
         }
         .inhalt {
             background-color: #fff;
@@ -50,7 +56,7 @@
 
         .contact-us button {
             padding: 10px 20px;
-            background-color: #050df7;
+            background-color: #d40b0b;
             color: white;
             border: none;
             border-radius: 4px;
@@ -64,7 +70,7 @@
     </style>
 </head>
 <body>
-    <nav style="background-color: #1b03f4; padding: 1em;">
+    <nav style="background-color: #444; padding: 1em;">
         <ul style="list-style: none; padding: 0; display: flex; justify-content: center;">
             <li style="margin: 0 1em;"><a href="index.html" style="color: #fff; text-decoration: none;">Startseite</a></li>
             <li style="margin: 0 1em;"><a href="vorteile Nachteile.html" style="color: #fff; text-decoration: none;">Vorteile/Nachteile</a></li>
@@ -78,46 +84,46 @@
         </ul>
     </nav>
 
-    <h1>VR und AR: Potenziale und Herausforderungen</h1>
-    
-    <div class="inhalt">
-        <p>VR und AR bieten ein riesiges Potenzial, stehen aber vor einer Menge von Herausforderungen, die ihren Alltag beeinträchtigen können:</p>
-        <ul>
-            <li><strong>1) Die hohen Kosten der Geräte:</strong> z.B. VR-Headsets oder AR-Brillen, die aus präzisen Sensoren und leistungsstarken Prozessoren bestehen und auch zu einem hohen Energieverbrauch führen können.</li>
-            <li><strong>2) Die Abhängigkeit von stabilen Internetverbindungen:</strong> Ohne diese Verbindung kommt es zu Verzögerungen, Bildausfällen oder sinkender Qualität.</li>
-            <li><strong>3) Gesundheitliche Probleme beim intensiven Verwenden:</strong> Augenprobleme, Migräne.</li>
-            <li><strong>4) Gesellschaftliche Bedenken:</strong> Manche sehen die Gefahr, dass man dadurch süchtig oder zu abhängig wird.</li>
-            <li><strong>5) Datenschutz (AR):</strong> Risiko für Hackerangriffe und Datenmissbrauch.</li>
-        </ul>
-    </div>
-    <div class="contact-us">
-        <h2>Kontaktformular</h2>
-        <form id="contactForm" onsubmit="return validateForm()">
-            <input type="text" id="name" name="name" placeholder="Ihr Name" required>
-            <input type="tel" id="tel" name="tel" placeholder="Telefonnummer" required>
-            <input type="email" id="email" name="email" placeholder="E-Mail-Adresse" required>
-            <textarea id="message" name="message" placeholder="Ihre Nachricht" rows="4"></textarea>
-            <button type="submit">Absenden</button>
-        </form>
-    </div>
+<header>
+    <h1> VR und AR: Potenziale und Herausforderungen </h1>
+</header>
 
-    <footer>
-        <p>Quellen: Virtual and Augmented Reality. Status quo, Herausforderungen und zukünftige Entwicklungen, Büro für Technikfolgen-Abschätzung beim Deutschen Bundestag.</p>
-    </footer>
-    <script>
-        function validateForm() {
-            var name = document.getElementById("name").value;
-            var tel = document.getElementById("tel").value;
-            var email = document.getElementById("email").value;
-            var message = document.getElementById("message").value;
+<div class="inhalt">
+    <p>VR und AR bieten ein riesiges Potenzial, stehen aber vor einer Menge von Herausforderungen, die ihren Alltag beeinträchtigen können:</p>
+    <ul>
+        <li><strong>1) Die hohen Kosten der Geräte:</strong> z.B. VR-Headsets oder AR-Brillen, die aus präzisen Sensoren und leistungsstarken Prozessoren bestehen und auch zu einem hohen Energieverbrauch führen können.</li>
+        <li><strong>2) Die Abhängigkeit von stabilen Internetverbindungen:</strong> Ohne diese Verbindung kommt es zu Verzögerungen, Bildausfällen oder sinkender Qualität.</li>
+        <li><strong>3) Gesundheitliche Probleme beim intensiven Verwenden:</strong> Augenprobleme, Migräne.</li>
+        <li><strong>4) Gesellschaftliche Bedenken:</strong> Manche sehen die Gefahr, dass man dadurch süchtig oder zu abhängig wird.</li>
+        <li><strong>5) Datenschutz (AR):</strong> Risiko für Hackerangriffe und Datenmissbrauch.</li>
+    </ul>
+</div>
+<div class="contact-us">
+    <h2>Kontaktformular</h2>
+    <form id="contactForm" onsubmit="return validateForm()">
+        <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+        <input type="tel" id="tel" name="tel" placeholder="Telefonnummer" required>
+        <input type="email" id="email" name="email" placeholder="E-Mail-Adresse" required>
+        <textarea id="message" name="message" placeholder="Ihre Nachricht" rows="4"></textarea>
+        <button type="submit">Absenden</button>
+    </form>
+</div>
+<footer>
+    <p>Quellen: Virtual and Augmented Reality. Status quo, Herausforderungen und zukünftige Entwicklungen, Büro für Technikfolgen-Abschätzung beim Deutschen Bundestag.</p>
+</footer>
+<script>
+    function validateForm() {
+        var name = document.getElementById("name").value;
+        var tel = document.getElementById("tel").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
 
-            if (name == "" || tel == "" || email == "") {
-                alert("Bitte füllen Sie alle erforderlichen Felder aus.");
-                return false;
-            }
-            alert("Vielen Dank für Ihre Nachricht!");
-            return true;
+        if (name == "" || tel == "" || email == "") {
+            alert("Bitte füllen Sie alle erforderlichen Felder aus.");
+            return false;
         }
-    </script>
-</body>
+        alert("Vielen Dank für Ihre Nachricht!");
+        return true;
+    }
+</script>
 </html>
