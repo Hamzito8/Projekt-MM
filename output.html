@@ -3,83 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Output VR&AR</title>
+    <title>Output VR & AR</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
         }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
         h1 {
+            margin-top: 20px;
+            font-size: 2em;
             color: #4CAF50;
         }
-        h2 {
-            color: #333;
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
         }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
         ul {
             list-style-type: disc;
             margin-left: 20px;
         }
+
         p {
             font-size: 1.1em;
+            margin: 10px 0;
         }
+
         .highlight {
             font-weight: bold;
+            color: #4CAF50;
+            text-align: center;
+            margin-top: 20px;
         }
-        .quote {
-            font-style: italic;
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
-    <nav style="background-color: #444; padding: 1em;">
-        <ul style="list-style: none; padding: 0; display: flex; justify-content: center;">
-            <li style="margin: 0 1em;"><a href="index.html" style="color: #fff; text-decoration: none;">Startseite</a></li>
-            <li style="margin: 0 1em;"><a href="vorteile Nachteile.html" style="color: #fff; text-decoration: none;">Vorteile/Nachteile</a></li>
-            <li style="margin: 0 1em;"><a href="applications.html" style="color: #fff; text-decoration: none;">Anwendungen</a></li>
-            <li style="margin: 0 1em;"><a href="Entwicklung.html" style="color: #fff; text-decoration: none;">Entwicklung</a></li>
-            <li style="margin: 0 1em;"><a href="Perspektive.html" style="color: #fff; text-decoration: none;">Perspektive</a></li>
-            <li style="margin: 0 1em;"><a href="tracking.html" style="color: #fff; text-decoration: none;">Trackingtechnologien</a></li>
-            <li style="margin: 0 1em;"><a href="output.html" style="color: #fff; text-decoration: none;">Outputmöglichkeiten</a></li>
-            <li style="margin: 0 1em;"><a href="Herausforderungen.html" style="color: #fff; text-decoration: none;">Herausforderungen</a></li>
-            <li style="margin: 0 1em;"><a href="Faktoren.html" style="color: #fff; text-decoration: none;">Beeinflussende Faktoren</a></li>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="vorteile Nachteile.html">Vorteile/Nachteile</a></li>
+            <li><a href="applications.html">Anwendungen</a></li>
+            <li><a href="Entwicklung.html">Entwicklung</a></li>
+            <li><a href="Perspektive.html">Perspektive</a></li>
+            <li><a href="tracking.html">Trackingtechnologien</a></li>
+            <li><a href="output.html">Outputmöglichkeiten</a></li>
+            <li><a href="Herausforderungen.html">Herausforderungen</a></li>
+            <li><a href="Faktoren.html">Beeinflussende Faktoren</a></li>
         </ul>
     </nav>
-    </nav>
-    <h1>Output VR&AR</h1>
 
-    <h2>Multisensorische Kanäle:</h2>
-    <ul>
-        <li>Visuelle, akustische und haptische Reize im Fokus.</li>
-    </ul>
+    <!-- Inhalt -->
+    <div class="content">
+        <h1>Output VR & AR</h1>
 
-    <h2>Visuelle Ausgabe:</h2>
-    <ul>
-        <li>Hauptgeräte: HMDs, stationäre Systeme wie CAVEs.</li>
-        <li>Anforderungen: Hohe Auflösung, breites Sichtfeld, Stereoskopie.</li>
-    </ul>
+        <h2>Multisensorische Kanäle</h2>
+        <ul>
+            <li>Visuelle, akustische und haptische Reize im Fokus.</li>
+        </ul>
 
-    <h2>Akustische Ausgabe:</h2>
-    <ul>
-        <li>Geräte: Lautsprecher, binaurale Systeme.</li>
-        <li>Wichtige Aspekte: Lautsprecherpositionierung, Raumklang.</li>
-    </ul>
+        <h2>Visuelle Ausgabe</h2>
+        <ul>
+            <li>Hauptgeräte: HMDs, stationäre Systeme wie CAVEs.</li>
+            <li>Anforderungen: Hohe Auflösung, breites Sichtfeld, Stereoskopie.</li>
+        </ul>
 
-    <h2>Haptische Ausgabe:</h2>
-    <ul>
-        <li>Geräte: Handschuhe…</li>
-        <li>Funktionen: Taktiles Feedback, Kraftrückkopplung.</li>
-    </ul>
+        <h2>Akustische Ausgabe</h2>
+        <ul>
+            <li>Geräte: Lautsprecher, binaurale Systeme.</li>
+            <li>Wichtige Aspekte: Lautsprecherpositionierung, Raumklang.</li>
+        </ul>
 
-    <h2>Ziel:</h2>
-    <p class="highlight">Realistic integration of multisensory stimuli for maximum immersion.</p>
+        <h2>Haptische Ausgabe</h2>
+        <ul>
+            <li>Geräte: Handschuhe, Anzüge.</li>
+            <li>Funktionen: Taktiles Feedback, Kraftrückkopplung.</li>
+        </ul>
 
-    <h2>Quellen:</h2>
-    <ul>
-        <li>Visuelle Ausgabe: S. 170–191.</li>
-        <li>Akustische Ausgabe: S. 211.</li>
-        <li>Haptische Ausgabe: S. 212–215.</li>
-    </ul>
+        <h2>Ziel</h2>
+        <p class="highlight">Realistische Integration multisensorischer Reize für maximale Immersion.</p>
+
+        <h2>Quellen</h2>
+        <ul>
+            <li>Visuelle Ausgabe: S. 170–191.</li>
+            <li>Akustische Ausgabe: S. 211.</li>
+            <li>Haptische Ausgabe: S. 212–215.</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 VR & AR. Alle Rechte vorbehalten.</p>
+    </footer>
 
 </body>
 </html>
