@@ -24,9 +24,6 @@
         h2 {
             color: #333;
         }
-        main {
-            padding: 20px;
-        }
         section {
             background-color: white;
             margin: 20px 0;
@@ -44,9 +41,6 @@
             color: #fff;
             text-decoration: none;
         }
-        nav a:hover {
-            text-decoration: underline;
-        }
         .content-wrapper {
             display: flex;
             align-items: flex-start;
@@ -57,11 +51,11 @@
             width: 60%;
             padding-right: 2em;
         }
-        .image-content {
+        .bild-content {
             width: 35%;
             text-align: center;
         }
-        .image-content img {
+        .bild-content img {
             max-width: 100%;
             height: auto;
             border: 1px solid #ccc;
@@ -74,9 +68,6 @@
             color: white;
             margin-top: 20px;
         }
-        .contact-us h2 {
-            color: #fff;
-        }
         .contact-us input, .contact-us textarea {
             width: 100%;
             padding: 10px;
@@ -88,12 +79,10 @@
             padding: 10px 20px;
             background-color: #d40b0b;
             color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+            border-radius: 20px ;
         }
         .contact-us button:hover {
-            background-color: #0043d1;
+            background-color: #000000;
         }
         h3 {
             color: #e20707;
@@ -102,20 +91,25 @@
         .video-container {
             display: flex;
             justify-content: center;
-            align-items: center;
             margin: 20px 0;
         }
         .video-container iframe {
-            width: 1000px;
+            width: 1300px;
             height: 500px;
-            border: none;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 35px;
         }
+        nav a {
+    color: white;
+    text-decoration: none;
+}
+nav {
+    background-color: #444;
+    padding: 1em;
+}
     </style>
 </head>
 <body>
-    <nav style="background-color: #444; padding: 1em;">
+    <nav>
         <ul style="list-style: none; padding: 0; display: flex; justify-content: center;">
             <li style="margin: 0 1em;"><a href="index.html">Startseite</a></li>
             <li style="margin: 0 1em;"><a href="vorteile Nachteile.html">Vorteile/Nachteile</a></li>
@@ -147,7 +141,7 @@
                     </ul>
                 </section>
             </div>
-            <div class="image-content">
+            <div class="bild-content">
                 <img src="./bilder/VR AR Unterschied.png" alt="VR und AR Unterschied">
                 <p style="text-align: center; font-size: 0.9em; color: #555;">Reality-Virtuality-Kontinuum. Nach Milgram et al. (1995) [5]</p>
             </div>

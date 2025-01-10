@@ -27,53 +27,19 @@
             color: #ffffff;
             text-align : center;
         }
-        nav {
-            background-color: #444;
-            padding: 10px 0;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav li {
-            margin: 0 15px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.1em;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .context {
-            max-width: 1200px;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
         .content-wrapper {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-top: 20px;
         }
-        .image-container {
+        .bild-container {
             flex: 1;
             margin-right: 20px;
         }
         .text-container {
             flex: 2;
             max-width: 600px;
-        }
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
         }
         .newcolor {
             font-weight: bold;
@@ -109,18 +75,26 @@
             cursor: pointer;
         }
         .contact-us button:hover {
-            background-color: #0043d1;
+            background-color: #000000;
         }
         nav {
             background-color: #444;
-            padding: 1em;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin: 0 15px;
         }
         nav a {
             color: #fff;
             text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
+            font-size: 1.1em;
         }
     </style>
 </head>
@@ -141,13 +115,11 @@
     <header>
         <h1> Outputmöglichkeiten in VR & AR </h1>
     </header>
-
     <div class="context">
         <div class="content-wrapper">
-            <div class="image-container">
+            <div class="bild-container">
                 <img src="./bilder/vr brille.png" alt="VR Brille" style="width: 100%; height: auto;">
             </div>
-
             <div class="text-container">
                 <h2>Multisensorische Kanäle</h2>
                 <ul>
@@ -171,12 +143,10 @@
                     <li>Geräte: Handschuhe, Anzüge.</li>
                     <li>Funktionen: Taktiles Feedback, Kraftrückkopplung.</li>
                 </ul>
-
                 <h2>Ziel</h2>
                 <p class="newcolor">Realistische Integration multisensorischer Reize für maximale Immersion.</p>
             </div>
         </div>
-
         <div class="contact-us">
             <h2>Kontaktformular</h2>
             <form id="contactForm" onsubmit="return validateForm()">
@@ -187,9 +157,7 @@
                 <button type="submit">Absenden</button>
             </form>
         </div>
-
     </div>
-
     <footer>
         <p> Quellen: 
             <ul>
@@ -199,7 +167,6 @@
             </ul>
         </p>
     </footer>
-
     <script>
         function validateForm() {
             var name = document.getElementById("name").value;

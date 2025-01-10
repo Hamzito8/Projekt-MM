@@ -47,7 +47,7 @@
             padding: 10px;
             margin-bottom: 10px;
             border-radius: 4px;
-            border: 1px solid #ccc;
+            border: #ccc;
         }
         .contact-us button {
             padding: 10px 20px;
@@ -55,30 +55,33 @@
             color: white;
             border: none;
             border-radius: 4px;
-            cursor: pointer;
         }
         .contact-us button:hover {
-            background-color: #0043d1;
+            background-color: #000000;
         }
-        nav hover {
-            text-decoration: underline;
-        }
+        nav a {
+            color: white;
+            text-decoration: none;
+}
+        nav {
+            background-color: #444;
+            padding: 1em;
+}
     </style>
 </head>
 <body>
-    <nav style="background-color: #444; padding: 1em;">
+    <nav>
         <ul style="list-style: none; padding: 0; display: flex; justify-content: center;">
-            <li style="margin: 0 1em;"><a href="index.html" style="color: #fff; text-decoration: none;">Startseite</a></li>
-            <li style="margin: 0 1em;"><a href="vorteile Nachteile.html" style="color: #fff; text-decoration: none;">Vorteile/Nachteile</a></li>
-            <li style="margin: 0 1em;"><a href="applications.html" style="color: #fff; text-decoration: none;">Anwendungen</a></li>
-            <li style="margin: 0 1em;"><a href="Entwicklung.html" style="color: #fff; text-decoration: none;">Entwicklung</a></li>
-            <li style="margin: 0 1em;"><a href="Perspektive.html" style="color: #fff; text-decoration: none;">Perspektive</a></li>
-            <li style="margin: 0 1em;"><a href="tracking.html" style="color: #fff; text-decoration: none;">Trackingtechnologien</a></li>
-            <li style="margin: 0 1em;"><a href="output.html" style="color: #fff; text-decoration: none;">Outputmöglichkeiten</a></li>
-            <li style="margin: 0 1em;"><a href="Herausforderungen.html" style="color: #fff; text-decoration: none;">Herausforderungen</a></li>
-            <li style="margin: 0 1em;"><a href="Faktoren.html" style="color: #fff; text-decoration: none;">Beeinflussende Faktoren</a></li>
+            <li style="margin: 0 1em;"><a href="index.html">Startseite</a></li>
+            <li style="margin: 0 1em;"><a href="vorteile Nachteile.html">Vorteile/Nachteile</a></li>
+            <li style="margin: 0 1em;"><a href="applications.html">Anwendungen</a></li>
+            <li style="margin: 0 1em;"><a href="Entwicklung.html">Entwicklung</a></li>
+            <li style="margin: 0 1em;"><a href="Perspektive.html">Perspektive</a></li>
+            <li style="margin: 0 1em;"><a href="tracking.html">Trackingtechnologien</a></li>
+            <li style="margin: 0 1em;"><a href="output.html">Outputmöglichkeiten</a></li>
+            <li style="margin: 0 1em;"><a href="Herausforderungen.html">Herausforderungen</a></li>
+            <li style="margin: 0 1em;"><a href="Faktoren.html">Beeinflussende Faktoren</a></li>
         </ul>
-    </nav>
     </nav>
     <header>
         <h1>Entwicklung von VR/AR</h1>
@@ -115,7 +118,6 @@
             </ul>
             <img src="bilder/soldier.jpg" title="Head-Mounted Displays" width="500">
         </section>
-
         <div class="contact-us">
             <h2>Kontaktformular</h2>
             <form id="contactForm" onsubmit="return validateForm()">
@@ -127,12 +129,10 @@
             </form>
         </div>
     </main>
-
     <footer>
         <footer>
             &copy; Quellen:Dörner, R., Broll, W., Grimm, P., & Jung, B. (Hrsg.). (2019). Virtual und Augmented Reality (VR/AR): Grundlagen und Methoden der Virtuellen und Augmentierten Realität (2. Auflage). Springer-Verlag GmbH. Verwendete Seiten: [1] 355-357, [2] 356
         </footer>
-
     <script>
         function validateForm() {
             var name = document.getElementById("name").value;
