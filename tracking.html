@@ -3,51 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VR und AR Herausforderungen</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Trackingtechnologien in VR/AR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .hauptabschnitt {
+            padding: 20px;
+        }
+        abschnitt {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        h2 {
+            color: #333;
+        }
+        abschnitt p {
+            flex: 1;
+            margin-right: 20px;
+        }
+        abschnitt img {
+            max-width: 35%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Startseite</a></li>
-            <li><a href="vorteile Nachteile.html">Vorteile/Nachteile</a></li>
-            <li><a href="applications.html">Anwendungen</a></li>
-            <li><a href="Entwicklung.html">Entwicklung</a></li>
-            <li><a href="Perspektive.html">Perspektive</a></li>
-            <li><a href="tracking.html">Trackingtechnologien</a></li>
-            <li><a href="output.html">Outputmöglichkeiten</a></li>
-            <li><a href="Herausforderungen.html">Herausforderungen</a></li>
-            <li><a href="Faktoren.html">Beeinflussende Faktoren</a></li>
+    <nav style="background-color: #444; padding: 1em;">
+        <ul style="list-style: none; padding: 0; display: flex; justify-content: center;">
+            <li style="margin: 0 1em;"><a href="index.html" style="color: #fff; text-decoration: none;">Startseite</a></li>
+            <li style="margin: 0 1em;"><a href="vorteile Nachteile.html" style="color: #fff; text-decoration: none;">Vorteile/Nachteile</a></li>
+            <li style="margin: 0 1em;"><a href="applications.html" style="color: #fff; text-decoration: none;">Anwendungen</a></li>
+            <li style="margin: 0 1em;"><a href="Entwicklung.html" style="color: #fff; text-decoration: none;">Entwicklung</a></li>
+            <li style="margin: 0 1em;"><a href="Perspektive.html" style="color: #fff; text-decoration: none;">Perspektive</a></li>
+            <li style="margin: 0 1em;"><a href="tracking.html" style="color: #fff; text-decoration: none;">Trackingtechnologien</a></li>
+            <li style="margin: 0 1em;"><a href="output.html" style="color: #fff; text-decoration: none;">Outputmöglichkeiten</a></li>
+            <li style="margin: 0 1em;"><a href="Herausforderungen.html" style="color: #fff; text-decoration: none;">Herausforderungen</a></li>
+            <li style="margin: 0 1em;"><a href="Faktoren.html" style="color: #fff; text-decoration: none;">Beeinflussende Faktoren</a></li>
         </ul>
     </nav>
+    <header>
+        <h1>Trackingtechnologien in VR/AR</h1>
+    </header>
+    <hauptabschnitt>
+        <abschnitt>
+            <div>
+                <h2>Acoustic Tracking</h2>
+                <p>Das akustische Tracking verwendet Schallwellen, um die Position eines Objekts im Raum zu bestimmen. Dabei werden von einem Sender Schallimpulse ausgesendet, die von Mikrofonen empfangen werden. Die Laufzeitdifferenz der Schallwellen zwischen Sender und Empfänger wird genutzt, um die Distanz zu berechnen. Dieses Verfahren funktioniert auch in Umgebungen mit schlechten Sichtverhältnissen. Allerdings ist es anfällig für Umgebungsgeräusche, die das Signal stören können. Zudem hat das akustische Tracking eine begrenzte Reichweite und weist eine relativ hohe Latenz auf, was es für einige Anwendungen weniger geeignet macht.</p>
+            </div>
+        </abschnitt>
+        <abschnitt>
+            <div>
+                <h2>Kamerabasiertes Tracking</h2>
+                <p>Kamerabasiertes Tracking nutzt Kameras, um Bilder der Umgebung aufzunehmen und daraus die Position und Orientierung eines Objekts zu bestimmen. Eine Variante dieses Verfahrens ist das markenbasierte Tracking, bei dem Marker wie QR-Codes im Bild erkannt werden. Eine andere Variante ist das merkmalsbasierte Tracking, bei dem natürliche Merkmale im Bild verwendet werden. Das SLAM-Verfahren (Simultaneous Localization and Mapping) kombiniert Tracking mit der Erstellung einer Karte der Umgebung in Echtzeit. Kamerabasiertes Tracking wird häufig in AR-Anwendungen eingesetzt, da es keine zusätzliche Hardware außer einer Kamera benötigt.</p>
+            </div>
+            <img src="./bilder/kameratracking.png" alt="Kamerabasiertes Tracking">
+        </abschnitt>
+        <abschnitt>
+            <div>
+                <h2>Finger Tracking</h2>
+                <p>Finger Tracking verfolgt die Position und Bewegung von Fingern in virtuellen Umgebungen. Mechanische Tracking-Methoden verwenden spezielle Datenhandschuhe mit integrierten Sensoren, um die Fingerpositionen zu erfassen. Optische Tracking-Methoden nutzen Kameras, die Fingerbewegungen basierend auf Infrarot- oder Tiefendaten erkennen. Aufgrund der hohen Freiheitsgrade der menschlichen Hand, mit 27 Freiheitsgraden pro Hand, ist eine präzise Erfassung eine Herausforderung. Finger Tracking findet vor allem in der Gestensteuerung und in virtuellen Montagesimulationen Anwendung.</p>
+            </div>
+            <img src="./bilder/finger tracking.png" alt="Finger Tracking">
+        </abschnitt>
 
-    <h1>VR und AR: Potenziale und Herausforderungen</h1>
-    
-    <div class="inhalt">
-        <p>VR und AR bieten ein riesiges Potenzial, stehen aber vor einer Menge von Herausforderungen, die ihren Alltag beeinträchtigen können:</p>
-        <ul>
-            <li><strong>1) Die hohen Kosten der Geräte:</strong> z.B. VR-Headsets oder AR-Brillen, die aus präzisen Sensoren und leistungsstarken Prozessoren bestehen und auch zu einem hohen Energieverbrauch führen können.</li>
-            <li><strong>2) Die Abhängigkeit von stabilen Internetverbindungen:</strong> Ohne diese Verbindung kommt es zu Verzögerungen, Bildausfällen oder sinkender Qualität.</li>
-            <li><strong>3) Gesundheitliche Probleme beim intensiven Verwenden:</strong> Augenprobleme, Migräne.</li>
-            <li><strong>4) Gesellschaftliche Bedenken:</strong> Manche sehen die Gefahr, dass man dadurch süchtig oder zu abhängig wird.</li>
-            <li><strong>5) Datenschutz (AR):</strong> Risiko für Hackerangriffe und Datenmissbrauch.</li>
-        </ul>
-    </div>
-    <div class="contact-us">
-        <h2>Kontaktformular</h2>
-        <form id="contactForm" onsubmit="return validateForm()">
-            <input type="text" id="name" name="name" placeholder="Ihr Name" required>
-            <input type="tel" id="tel" name="tel" placeholder="Telefonnummer" required>
-            <input type="email" id="email" name="email" placeholder="E-Mail-Adresse" required>
-            <textarea id="message" name="message" placeholder="Ihre Nachricht" rows="4"></textarea>
-            <button type="submit">Absenden</button>
-        </form>
-    </div>
-
+        <abschnitt>
+            <div>
+                <h2>Eye Tracking</h2>
+                <p>Eye Tracking verfolgt die Blickrichtung des Nutzers, indem die Position der Pupillen und Reflexionen auf der Hornhaut erkannt werden. Dieses Verfahren erfordert eine individuelle Kalibrierung, um eine genaue Erfassung der Blickrichtung zu gewährleisten. Zur Messung wird Infrarotlicht verwendet, das Reflexionen im Auge erzeugt, die von Sensoren erfasst werden. Eye Tracking ermöglicht natürlichere Interaktionen in VR, beispielsweise durch Blicksteuerung, und kann zudem die Renderprozesse in Head-Mounted Displays optimieren, indem nur die Bereiche hochauflösend gerendert werden, auf die der Nutzer tatsächlich schaut.</p>
+            </div>
+        </abschnitt>
+    </hauptabschnitt>
     <footer>
-        <p>Quellen: Virtual and Augmented Reality. Status quo, Herausforderungen und zukünftige Entwicklungen, Büro für Technikfolgen-Abschätzung beim Deutschen Bundestag.</p>
+        <p>Quelle: Dörner, R., Broll, W., Grimm, P., & Jung, B. (2019). <em>Virtual und Augmented Reality (VR/AR): Grundlagen und Methoden der Virtuellen und Augmentierten Realität</em>. Springer Vieweg.</p>
     </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
