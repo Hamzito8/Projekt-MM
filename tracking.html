@@ -101,20 +101,38 @@
         <abschnitt>
             <div>
                 <h2>Acoustic Tracking</h2>
-                <p>Das akustische Tracking verwendet Schallwellen, um die Position eines Objekts im Raum zu bestimmen. Dabei werden von einem Sender Schallimpulse ausgesendet, die von Mikrofonen empfangen werden. Die Laufzeitdifferenz der Schallwellen zwischen Sender und Empfänger wird genutzt, um die Distanz zu berechnen. Dieses Verfahren funktioniert auch in Umgebungen mit schlechten Sichtverhältnissen. Allerdings ist es anfällig für Umgebungsgeräusche, die das Signal stören können. Zudem hat das akustische Tracking eine begrenzte Reichweite und weist eine relativ hohe Latenz auf, was es für einige Anwendungen weniger geeignet macht.</p>
+                <ul>
+                    <li>Verwendet Schallwellen zur Positionsbestimmung im Raum</li>
+                    <li>Sender gibt Schallimpulse ab, die von Mikrofonen empfangen werden</li>
+                    <li>Berechnung der Distanz über die Laufzeitdifferenz der Schallwellen</li>
+                    <li>Funktioniert auch bei schlechten Sichtverhältnissen</li>
+                    <li>Nachteile: Empfindlich gegenüber Umgebungsgeräuschen, begrenzte Reichweite, relativ hohe Latenz</li>
+                </ul>
             </div>
         </abschnitt>
         <abschnitt>
             <div>
                 <h2>Kamerabasiertes Tracking</h2>
-                <p>Kamerabasiertes Tracking nutzt Kameras, um Bilder der Umgebung aufzunehmen und daraus die Position und Orientierung eines Objekts zu bestimmen. Eine Variante dieses Verfahrens ist das markenbasierte Tracking, bei dem Marker wie QR-Codes im Bild erkannt werden. Eine andere Variante ist das merkmalsbasierte Tracking, bei dem natürliche Merkmale im Bild verwendet werden. Das SLAM-Verfahren (Simultaneous Localization and Mapping) kombiniert Tracking mit der Erstellung einer Karte der Umgebung in Echtzeit. Kamerabasiertes Tracking wird häufig in AR-Anwendungen eingesetzt, da es keine zusätzliche Hardware außer einer Kamera benötigt.</p>
+                <ul>
+                    <li>Verwendet Kameras zur Bestimmung von Position und Orientierung eines Objekts</li>
+                    <li>Markenbasiertes Tracking erkennt Marker wie QR-Codes</li>
+                    <li>Merkmalsbasiertes Tracking nutzt natürliche Merkmale im Bild</li>
+                    <li>SLAM-Verfahren kombiniert Tracking mit Echtzeit-Erstellung einer Umgebungskarte</li>
+                    <li>Wird häufig in AR-Systemen eingesetzt, da keine zusätzliche Hardware benötigt wird</li>
+                </ul>
             </div>
             <img src="./bilder/kameratracking.png" alt="Kamerabasiertes Tracking">
         </abschnitt>
         <abschnitt>
             <div>
                 <h2>Finger Tracking</h2>
-                <p>Finger Tracking verfolgt die Position und Bewegung von Fingern in virtuellen Umgebungen. Mechanische Tracking-Methoden verwenden spezielle Datenhandschuhe mit integrierten Sensoren, um die Fingerpositionen zu erfassen. Optische Tracking-Methoden nutzen Kameras, die Fingerbewegungen basierend auf Infrarot- oder Tiefendaten erkennen. Aufgrund der hohen Freiheitsgrade der menschlichen Hand, mit 27 Freiheitsgraden pro Hand, ist eine präzise Erfassung eine Herausforderung. Finger Tracking findet vor allem in der Gestensteuerung und in virtuellen Montagesimulationen Anwendung.</p>
+                <ul>
+                    <li>Verfolgt die Position und Bewegung von Fingern in virtuellen Umgebungen</li>
+                    <li>Mechanische Methoden nutzen Datenhandschuhe mit Sensoren</li>
+                    <li>Optische Methoden verwenden Kameras, die Fingerbewegungen über Infrarot- oder Tiefendaten erkennen</li>
+                    <li>Hohe Freiheitsgrade der Hand machen präzise Erfassung schwierig</li>
+                    <li>Anwendung vor allem in der Gestensteuerung und virtuellen Montagesimulationen</li>
+                </ul>
             </div>
             <img src="./bilder/finger tracking.png" alt="Finger Tracking">
         </abschnitt>
@@ -122,7 +140,13 @@
         <abschnitt>
             <div>
                 <h2>Eye Tracking</h2>
-                <p>Eye Tracking verfolgt die Blickrichtung des Nutzers, indem die Position der Pupillen und Reflexionen auf der Hornhaut erkannt werden. Dieses Verfahren erfordert eine individuelle Kalibrierung, um eine genaue Erfassung der Blickrichtung zu gewährleisten. Zur Messung wird Infrarotlicht verwendet, das Reflexionen im Auge erzeugt, die von Sensoren erfasst werden. Eye Tracking ermöglicht natürlichere Interaktionen in VR, beispielsweise durch Blicksteuerung, und kann zudem die Renderprozesse in Head-Mounted Displays optimieren, indem nur die Bereiche hochauflösend gerendert werden, auf die der Nutzer tatsächlich schaut.</p>
+            <ul>
+                <li>Verfolgt die Blickrichtung durch Erkennung der Pupillenposition und Hornhautreflexionen</li>
+                <li>Erfordert individuelle Kalibrierung für präzise Erfassung</li>
+                <li>Nutzt Infrarotlicht, um Reflexionen im Auge zu erzeugen und zu messen</li>
+                <li>Ermöglicht natürlichere Interaktionen in VR, z. B. durch Blicksteuerung</li>
+                <li>Optimiert Renderprozesse in Head-Mounted Displays, indem nur der Fokusbereich hochauflösend gerendert wird</li>
+            </ul>
             </div>
         </abschnitt>
     </hauptabschnitt>
@@ -150,7 +174,7 @@
         }
     </script>
         <footer>
-            <p>Quelle: Dörner, R., Broll, W., Grimm, P., & Jung, B. (2019). <em>Virtual und Augmented Reality (VR/AR): Grundlagen und Methoden der Virtuellen und Augmentierten Realität</em>. Springer Vieweg.</p>
+            <p>Quelle: Dörner, R., Broll, W., Grimm, P., & Jung, B. (2019). <em>Virtual und Augmented Reality (VR/AR): Grundlagen und Methoden der Virtuellen und Augmentierten Realität; verwendete Seiten: [1] 125 , [2] 130-131 , [3] 145-147 , [4] 149-152</p>
         </footer>
 </body>
 </html>
