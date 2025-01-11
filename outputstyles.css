@@ -71,22 +71,21 @@ footer {
 .contact-us button:hover {
     background-color: #000000;
 }
+nav a {
+    color: white;
+    text-decoration: none;
+}
 nav {
     background-color: #444;
-    padding: 10px 0;
+    padding: 1em;
+
+}
+nav li {
+    margin: 0 1em;
 }
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
-}
-nav li {
-    margin: 0 15px;
-}
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1em;
 }

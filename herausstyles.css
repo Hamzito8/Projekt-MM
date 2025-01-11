@@ -1,10 +1,9 @@
-
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6;
 }
 h1 {
     text-align: center;
@@ -12,9 +11,9 @@ h1 {
 }
 header {
     background-color: #d40b0b;
-    color: white;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
-    padding : 10px 0;
 }
 .inhalt {
     background-color: #fff;
