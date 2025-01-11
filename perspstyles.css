@@ -1,0 +1,95 @@
+
+header {
+            background: #d40b0b;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+.container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+h1 {
+            color: #ffffff;
+        }
+h2 {
+            color: #ff0000;
+        }
+footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+.contact-us {
+            background-color: #e4f0f6;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+.contact-us input, .contact-us textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+.contact-us button {
+            padding: 10px 20px;
+            background-color: #d40b0b;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+.contact-us button:hover {
+            background-color: #000000;
+        }
+        nav a {
+    color: white;
+    text-decoration: none;
+}
+nav {
+    background-color: #444;
+    padding: 1em;
+
+}
+nav li {
+    margin: 0 1em;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer li {
+    margin: 5px;
+}
+footer a {
+    color: #fff;
+    background-color: #9b1717;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+}

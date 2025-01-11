@@ -1,0 +1,133 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header {
+    background-color: #d40b0b;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.8em;
+}
+main {
+    padding: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+h2 {
+    color: #333;
+    margin-top: 0;
+    font-size: 1.5em;
+}
+.section {
+    margin-bottom: 30px;
+}
+.accordion-container {
+    margin-bottom: 10px;
+}
+
+.accordion {
+    display: none;
+}
+
+.accordion-label {
+    background-color: #343a40;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.accordion-label:hover {
+    background-color: #495057;
+}
+
+.panel {
+    display: none;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-left: 4px solid #007bff;
+    border-radius: 0 0 5px 5px;
+}
+
+.accordion:checked + .accordion-label + .panel {
+    display: block;
+}
+
+.panel ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.panel li {
+    padding-left: 15px;
+    position: relative;
+}
+
+.panel li::before {
+    content: "✓";
+    color: #007bff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+footer {
+    background-color: #d40b0b;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.9em;
+}
+.contact-us {
+    background-color: #e4f0f6;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.contact-us input, .contact-us textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.contact-us button {
+    padding: 10px 20px;
+    background-color: #d40b0b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.contact-us button:hover {
+    background-color: #000000;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav {
+    background-color: #444;
+    padding: 1em;
+
+}
+nav li {
+    margin: 0 1em;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}

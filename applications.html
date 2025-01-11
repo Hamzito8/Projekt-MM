@@ -4,105 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Einsatzmöglichkeiten von VR/AR</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0px;
-        }
-        header {
-            background-color: #d81313;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        main {
-            padding: 20px;
-        }
-        section {
-            background-color: white;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #f0e5e5;
-            font-size: 2em;
-        }
-        h2 {
-            color: #333;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #333;
-            color: white;
-            bottom: 0;
-            width: 100%;
-        }
-        a {
-            color: #4CAF50;
-        }
-        .contact-us {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-        .contact-us input, .contact-us textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-        }
-        .contact-us button {
-            padding: 10px 20px;
-            background-color: #d40b0b;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .contact-us button:hover {
-            background-color: #000000;
-        }
-        .video-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 0;
-        }
-        .video-container iframe {
-            width: 1000px;
-            height: 500px;
-            border: none;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        nav a {
-    color: white;
-    text-decoration: none;
-}
-nav {
-    background-color: #444;
-    padding: 1em;
-}
-    </style>
+    <link rel="stylesheet" href="einsatzstyles.css">
 </head>
 <body>
     <nav>
-        <ul style="list-style: none; padding: 0; display: flex; justify-content: center;">
-            <li style="margin: 0 1em;"><a href="index.html">Startseite</a></li>
-            <li style="margin: 0 1em;"><a href="vorteile Nachteile.html">Vorteile/Nachteile</a></li>
-            <li style="margin: 0 1em;"><a href="applications.html">Anwendungen</a></li>
-            <li style="margin: 0 1em;"><a href="Entwicklung.html">Entwicklung</a></li>
-            <li style="margin: 0 1em;"><a href="Perspektive.html">Perspektive</a></li>
-            <li style="margin: 0 1em;"><a href="tracking.html">Trackingtechnologien</a></li>
-            <li style="margin: 0 1em;"><a href="output.html">Outputmöglichkeiten</a></li>
-            <li style="margin: 0 1em;"><a href="Herausforderungen.html">Herausforderungen</a></li>
-            <li style="margin: 0 1em;"><a href="Faktoren.html">Beeinflussende Faktoren</a></li>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="vorteile Nachteile.html">Vorteile/Nachteile</a></li>
+            <li><a href="applications.html">Anwendungen</a></li>
+            <li><a href="Entwicklung.html">Entwicklung</a></li>
+            <li><a href="Perspektive.html">Perspektive</a></li>
+            <li><a href="tracking.html">Trackingtechnologien</a></li>
+            <li><a href="output.html">Outputmöglichkeiten</a></li>
+            <li><a href="Herausforderungen.html">Herausforderungen</a></li>
+            <li><a href="Faktoren.html">Beeinflussende Faktoren</a></li>
         </ul>
     </nav>
     <header>
@@ -111,36 +26,39 @@ nav {
     <main>
         <section>
             <h2>Medizin</h2>
-            <li> Virtuelle Operationstrainings für Ärzte ohne Risiko für Patienten </li>
-            <li> Behandlung von Phobien durch Konfrontation in einer sicheren, virtuellen Umgebung </li>  
-            <li>Unterstützung in der minimalinvasiven Chirurgie durch AR, z. B. Echtzeit-Informationen während Eingriffen</li>
+            <ul>
+                <li>Virtuelle Operationstrainings für Ärzte ohne Risiko für Patienten</li>
+                <li>Behandlung von Phobien durch Konfrontation in einer sicheren, virtuellen Umgebung</li>
+                <li>Unterstützung in der minimalinvasiven Chirurgie durch AR</li>
+            </ul>
             <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/ZZyBG6UsvoQ?autoplay=1&controls=0&loop=1&modestbranding=1&mute=1&playlist=ZZyBG6UsvoQ
-                " title="YouTube video player" allowfullscreen></iframe>
-                [1]
+                <iframe src="https://www.youtube.com/embed/ZZyBG6UsvoQ?autoplay=1&controls=0&loop=1&modestbranding=1&mute=1&playlist=ZZyBG6UsvoQ" title="YouTube video player" allowfullscreen></iframe>
             </div>
         </section>
         <section>
             <h2>Bildung und Training</h2>
-            <li> Schulungen in anspruchsvollen Berufen (z. B. Piloten, Schiffs- und Zugführer) mit VR-Simulatoren </li>
-            <li>Training von Personal in komplexen technischen Anlagen (z. B. Kraftwerke, Flugzeuge) </li>
-            <li>Interaktive und immersive Wissensvermittlung in Museen und Science Centern </li>
-            <img src = "./bilder/pilot.jpeg" style = "max-width: 50% ; height: 50%; display: block; margin: 20px 0;">
-            [4]
+            <ul>
+                <li>Schulungen in anspruchsvollen Berufen (z. B. Piloten) mit VR-Simulatoren</li>
+                <li>Training von Personal in komplexen technischen Anlagen</li>
+                <li>Interaktive und immersive Wissensvermittlung in Museen</li>
+            </ul>
+            <img src="./bilder/pilot.jpeg" alt="Pilot" style="max-width: 50%; height: 50%; display: block; margin: 20px 0;">
         </section>
         <section>
             <h2>Unterhaltung und Spiele</h2>
-            <li>Immersive VR-Simulationen für virtuelle Welten, Adventure-Games und Stadtrundgänge </li>
-            <li>AR-Spiele wie Pokémon Go mit hoher Popularität durch Plattformen wie ARKit und ARCore </li>
-            <img src = "./bilder/pokemon.png" style = "max-width: 100%; height: auto; display: block; margin: 20px 0;">
-            [2]
+            <ul>
+                <li>Immersive VR-Simulationen für virtuelle Welten und Stadtrundgänge</li>
+                <li>AR-Spiele wie Pokémon Go</li>
+            </ul>
+            <img src="./bilder/pokemon.png" alt="Pokémon Go" style="max-width: 100%; height: auto; display: block; margin: 20px 0;">
         </section>
         <section>
             <h2>Tourismus und Navigation</h2>
-            <li>AR-basierte Navigation auf Smartphones zur Orientierung in unbekannten Gebieten </li>
-            <li>Virtuelle Stadtführungen und Besichtigungen historischer Orte mit AR-Erweiterungen </li>
-            <img src = "./bilder/ar in navigation.jpg" alt = "AR in Navigation" style = "max-width: 100%; height: auto; display: block; margin: 20px 0;">
-            [3]
+            <ul>
+                <li>AR-basierte Navigation auf Smartphones</li>
+                <li>Virtuelle Stadtführungen und Besichtigungen historischer Orte</li>
+            </ul>
+            <img src="./bilder/ar-in-navigation.jpg" alt="AR in Navigation" style="max-width: 100%; height: auto; display: block; margin: 20px 0;">
         </section>
     </main>
     <div class="contact-us">
@@ -158,8 +76,6 @@ nav {
             var name = document.getElementById("name").value;
             var tel = document.getElementById("tel").value;
             var email = document.getElementById("email").value;
-            var message = document.getElementById("message").value;
-
             if (name == "" || tel == "" || email == "") {
                 alert("Bitte füllen Sie alle erforderlichen Felder aus.");
                 return false;
@@ -168,12 +84,10 @@ nav {
             return true;
         }
     </script>
-        <footer>
-            <p>TextQuelle: Dörner, R., Broll, W., Grimm, P., & Jung, B. (2019). <em>Virtual und Augmented Reality (VR/AR): Grundlagen und Methoden der Virtuellen und Augmentierten Realität</em>. Springer Vieweg. ; verwendete Seiten: 10-12</p>
-            <p> Videoquelle: https://www.youtube.com/watch?v=ZZyBG6UsvoQ&t=6s&ab_channel=NitroVR360 [1] </p>
-            <p> Bildquelle: https://niantic.helpshift.com/hc/de/6-pokemon-go/faq/28-catching-pokemon-in-ar-mode-1712012768/?l=de [2]</p>
-            <p> Bildquelle: https://www.autobild.de/artikel/google-maps-augmented-reality-navigation-14585997.html [3]</p>
-            <p> Bildquelle: https://www.usafe.af.mil/News/Article-Display/Article/2084928/14th-ftw-innovation-flight-augments-pilot-training-through-vr-technology/ [4]</p>
-        </footer>
+    <footer>
+        <p>Textquelle: Dörner, R., Broll, W., Grimm, P., & Jung, B. (2019). <em>Virtual und Augmented Reality (VR/AR)</em>. Springer Vieweg.</p>
+        <p>Videoquelle: https://www.youtube.com/watch?v=ZZyBG6UsvoQ</p>
+        <p>Bildquelle: Pokémon Go [2], Google Maps [3], Pilot Training [4]</p>
+    </footer>
 </body>
 </html>
