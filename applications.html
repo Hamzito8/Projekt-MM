@@ -10,16 +10,17 @@
     <nav>
         <ul>
             <li><a href="index.html">Startseite</a></li>
-            <li><a href="vorteile Nachteile.html">Vorteile/Nachteile</a></li>
-            <li><a href="applications.html">Anwendungen</a></li>
-            <li><a href="Entwicklung.html">Entwicklung</a></li>
-            <li><a href="Perspektive.html">Perspektive</a></li>
+            <li><a href="vorteile_nachteile.html">Vorteile/Nachteile</a></li>
+            <li><a href="anwendungen.html">Anwendungen</a></li>
+            <li><a href="entwicklung.html">Entwicklung</a></li>
+            <li><a href="perspektive.html">Perspektive</a></li>
             <li><a href="tracking.html">Trackingtechnologien</a></li>
             <li><a href="output.html">Outputmöglichkeiten</a></li>
-            <li><a href="Herausforderungen.html">Herausforderungen</a></li>
-            <li><a href="Faktoren.html">Beeinflussende Faktoren</a></li>
+            <li><a href="herausforderungen.html">Herausforderungen</a></li>
+            <li><a href="faktoren.html">Beeinflussende Faktoren</a></li>
         </ul>
     </nav>
+    
     <header>
         <h1>Einsatzmöglichkeiten von VR/AR</h1>
     </header>
@@ -47,7 +48,7 @@
         <section>
             <h2>Unterhaltung und Spiele</h2>
             <ul>
-                <li>Immersive VR-Simulationen für virtuelle Welten und Stadtrundgänge</li>
+                <li>Ein riesiges Angebot an VR-Spiele durch entsprechender Hardware (PSVR, Meta Quest)</li>
                 <li>AR-Spiele wie Pokémon Go</li>
             </ul>
             <img src="./bilder/pokemon.png" alt="Pokémon Go" style="max-width: 100%; height: auto; display: block; margin: 20px 0;">
@@ -60,28 +61,64 @@
             </ul>
             <img src="./bilder/ar in navigation.jpg" alt="AR in Navigation" style="max-width: 100%; height: auto; display: block; margin: 20px 0;">
         </section>
+            <h2>Fragebogen zur Nutzung von VR/AR</h2>
+            <div id="fragebogen">
+                <p>Haben Sie bereits VR oder AR genutzt?</p>
+                <button onclick="zeigeNaechsteFrage(true)">Ja</button>
+                <button onclick="zeigeNaechsteFrage(false)">Nein</button>
+            </div>
+        </section>
     </main>
-    <div class="contact-us">
-        <h2>Kontaktformular</h2>
-        <form id="contactForm" onsubmit="return validateForm()">
-            <input type="text" id="name" name="name" placeholder="Ihr Name" required>
-            <input type="tel" id="tel" name="tel" placeholder="Telefonnummer" required>
-            <input type="email" id="email" name="email" placeholder="E-Mail-Adresse" required>
-            <textarea id="message" name="message" placeholder="Ihre Nachricht" rows="4"></textarea>
-            <button type="submit">Absenden</button>
-        </form>
-    </div>
     <script>
-        function validateForm() {
-            var name = document.getElementById("name").value;
-            var tel = document.getElementById("tel").value;
-            var email = document.getElementById("email").value;
-            if (name == "" || tel == "" || email == "") {
-                alert("Bitte füllen Sie alle erforderlichen Felder aus.");
-                return false;
+        function zeigeNaechsteFrage(hatGenutzt) {
+            const fragebogen = document.getElementById("fragebogen");
+            fragebogen.innerHTML = ""; 
+            if (hatGenutzt) {
+                fragebogen.innerHTML = `
+                    <p>Wofür haben Sie VR oder AR genutzt?</p>
+                    <ul>
+                        <li><input type="checkbox" id="gaming" name="nutzung" value="Gaming, Unterhaltung"> <label for="gaming">Gaming / Unterhaltung</label></li>
+                        <li><input type="checkbox" id="bildung" name="nutzung" value="Bildung"> <label for="bildung">Bildung</label></li>
+                        <li><input type="checkbox" id="tourismus" name="nutzung" value="Tourismus"> <label for="tourismus">Tourismus</label></li>
+                        <li><input type="checkbox" id="andere" name="nutzung" value="Andere" onchange="zeigeAndereEingabe(this)"> <label for="andere">Andere</label></li>
+                    </ul>
+                    <div id="andereEingabeContainer" style="display: none; margin-top: 10px;">
+                        <label for="andereEingabe">Bitte geben Sie an, wofür Sie VR/AR sonst genutzt haben:</label><br>
+                        <input type="text" id="andereEingabe" placeholder="Ihre Antwort hier eingeben" style="width: 100%; padding: 8px;">
+                    </div>
+                    <button onclick="antwortenAbsenden()">Antworten absenden</button> `;
+            } else {
+                fragebogen.innerHTML = `
+                    <p>Kein Problem! Danke für deine Teilnahme.</p> `;
             }
-            alert("Vielen Dank für Ihre Nachricht!");
-            return true;
+        }
+        function zeigeAndereEingabe(checkbox) {
+            const andereEingabeContainer = document.getElementById("andereEingabeContainer");
+            if (checkbox.checked) {
+                andereEingabeContainer.style.display = "block";
+            } else {
+                andereEingabeContainer.style.display = "none";
+            }
+        }
+        function antwortenAbsenden() {
+            const ausgewaehlteOptionen = [];
+            document.querySelectorAll('input[name="nutzung"]:checked').forEach((checkbox) => {
+                if (checkbox.value === "Andere") {
+                    const andereEingabe = document.getElementById("andereEingabe").value;
+                    if (andereEingabe.trim() !== "") {
+                        ausgewaehlteOptionen.push(andereEingabe);
+                    } else {
+                        ausgewaehlteOptionen.push("Andere (keine spezifische Angabe)");
+                    }
+                } else {
+                    ausgewaehlteOptionen.push(checkbox.value);
+                }
+            });
+            if (ausgewaehlteOptionen.length > 0) {
+                alert("Vielen Dank für Ihre Antworten! Sie haben VR/AR für folgende Bereiche genutzt: " + ausgewaehlteOptionen.join(", "));
+            } else {
+                alert("Sie haben keine Antwort ausgewählt.");
+            }
         }
     </script>
     <footer>
@@ -91,3 +128,4 @@
     </footer>
 </body>
 </html>
+

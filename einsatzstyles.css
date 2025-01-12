@@ -54,30 +54,6 @@ nav a {
     color: white;
     text-decoration: none;
 }
-.contact-us {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-.contact-us input, .contact-us textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-.contact-us button {
-    padding: 10px 20px;
-    background-color: #d40b0b;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-.contact-us button:hover {
-    background-color: #000000;
-}
 .video-container {
     display: flex;
     justify-content: center;
